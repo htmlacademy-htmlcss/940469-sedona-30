@@ -57,7 +57,7 @@
                 <!--Этот заголовок я потом скрою-->
                 <p>Заинтересовались?</p>
                 <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button type="button">Поиск гостиницы в Седоне</button>
+                <button type="button" name="hotels">Поиск гостиницы в Седоне</button>
                 <!--Форма выбора гостиницы, если нажать на кнопку-->
                 <form action="#" method="post">
                     <p>
@@ -69,9 +69,12 @@
                         <input type="text" name="date_out" id="date_out" placeholder="Выберите дату" value="4 июля 2017">
                     </p>
                     <p>
-                        <label></label>
-                        <input type="number" min="0" value="2">
+                        <label for="adult">Взрослые:</label>
+                        <input type="number" name="adult" id="adult" min="0" value="2" step="1">
+                        <label for="children">Дети:</label>
+                        <input type="number" name="children" id="children" min="0" value="0" step="1">
                     </p>
+                    <button type="submit" name="search_hotel">Найти</button>
                 </form>
             </section>
             <section>
@@ -80,7 +83,18 @@
             </section>
         </main>
         <footer>
-            <
+            <p>#visitSEDONA</p>
+            <p>Тел.:<a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
+            <section>
+                <h2>Наши соцсети</h2>
+                <!--Этот заголовок я потом скрою-->
+                <ul>
+                    <li><a>Вконтакте</a></li>
+                    <li><a>Фейсбук</a></li>
+                    <li><a>Инстаграм</a></li>
+                </ul>
+            </section>
+            <p>Website by <a href="https://htmlacademy.ru"><img src="https://via.placeholder.com/115x41" alt="Логотип Академии"></a></p>
         </footer>
-            </body>
-        </html>
+    </body>
+</html>
