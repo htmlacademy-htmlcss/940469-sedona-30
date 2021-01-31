@@ -19,5 +19,36 @@
 /* Variables */
 
 :root {
-  --basic-white:
+
+/* All pages */
+
+  --white-text: #000000;
+  --black-text: #FFFFFF;
+  --dark-gray-text: #333333;
+  --dark-orange-everywhere: #766357;
+  --blue-everywhere: #81B3D2;
+  --light-grey-search-background: #F2F2F2;
+
+/* Index */
+
+  --light-gray-index-reasons: #EEEEEE;
+  --gray-index-more-less: #A9A9A9;
+
+/* Hotels */
+
+  --gray-hotels-range: #ABABAB;
+  --light-grey-hotels-sort: #CACACA;
+  --dark-grey-hotels-rating: #666666;
+  --light-grey-hotels-separator: #E5E5E5;
+
+/* Styleguide */
+
+  --dark-gray-hotels-checkbox-disabled: #6A6A6A;
+  --blue-hotels-button-hover: #669EC0;
+  --blue-hotels-button-active: #5496BD;
+  --dark-orange-button-hover: #604E43;
+  --dark-orange-button-active: #503E33;
+  --light-gray-search-background-hover: #EBEBEB;
+  --light-gray-search-border-focus: #E5E5E5;
+  --light-gray-academy-active: #BDBBBC;
 }
