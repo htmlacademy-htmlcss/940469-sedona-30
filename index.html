@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
@@ -8,10 +8,10 @@
     <link rel="apple-touch-icon" href="img/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#!">Информация</a></li>
           <li><a href="#!">Фото и видео</a></li>
           <li><a href="#!">Карта штата</a></li>
@@ -20,21 +20,21 @@
         <img src="img/logo.svg" width="138"  height="70" alt="Логотип города Седона">
       </nav>
     </header>
-    <main>
+    <main class="main-container">
       <!-- // TODO: Здесь будет структурный div с фоном-картинкой -->
       <img src="img/welcome-sedona.svg" alt="Welcome to the Gorgeous, Sedona! Because the Grand Canyon sucks!">
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <ol>
+      <ol class="reasons-list">
         <li>
-          <section>
+          <section class="reason-one">
             <h2>Настоящий городок</h2>
             <p>&ndash; &#8470;1 &ndash;</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/sedona-real-town.jpg" width="800" height="256" alt="Прекрасный пейзаж городка Седона">
           </section>
-          <section>
-            <ul>
+          <section class="advices">
+            <ul class="advices-list">
               <li>
                 <!-- // TODO: Здесь будет css icon-motel.svg-->
                 <h3>Жильё</h3>
@@ -54,7 +54,7 @@
           </section>
         </li>
         <li>
-          <section>
+          <section class="reason-two">
             <img src="img/brige-of-devil.jpg" width="800" height="256" alt="Посетите мост дьявола">
             <h2>Там есть мост дьявола</h2>
             <p>&ndash; &#8470;2 &ndash;</p>
@@ -62,35 +62,35 @@
           </section>
         </li>
         <li>
-          <section>
+          <section class="reason-three">
             <h2>Небольшая площадь</h2>
             <p>&ndash; &#8470;3 &ndash;</p>
             <p>Все достопримечательности находятся очень близко</p>
           </section>
         </li>
         <li>
-          <section>
+          <section class="reason-four">
             <h2>Красивая дорога</h2>
             <p>&ndash; &#8470;4 &ndash;</p>
             <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
           </section>
         </li>
         <li>
-          <section>
+          <section class="reason-five">
             <h2>Мало туристов</h2>
             <p>&ndash; &#8470;5 &ndash;</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </section>
         </li>
       </ol>
-      <section>
+      <section class="hotel-selection">
         <h2>Выбор гостиницы в Седоне</h2>
         <!-- // TODO: Этот заголовок я потом скрою -->
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="button" name="hotels">Поиск гостиницы в Седоне</button>
         <!-- // TODO: Форма выбора гостиницы, если нажать на кнопку-->
-        <form action="#!" method="post">
+        <form class="hotel-selection-modal" action="#!" method="post">
           <p>
             <label for="date-in">Дата заезда:</label>
             <input type="text" name="date-in" id="date-in" placeholder="Выберите дату" value="24 апреля 2017">
@@ -108,18 +108,18 @@
           <button type="submit" name="search-hotel" id="search-hotel">Найти</button>
         </form>
       </section>
-      <section>
+      <section class="location">
         <h2>Местоположение Седоны</h2>
         <!-- // TODO: Этот заголовок я потом скрою, и еще здесь будет карта-->
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <p>#visitSEDONA</p>
       <p>Тел.:<a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
-      <section>
+      <section class="footer-social">
         <h2>Наши соцсети</h2>
         <!-- // TODO: Этот заголовок я потом скрою и фон перенесу в css для иконок-->
-        <ul style="background-color:#81B3D2;">
+        <ul  class="our-social-networks" style="background-color:#81B3D2;">
           <li><a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"><!-- // TODO: Здесь потом будет css--></a></li>
           <li><a href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"><!-- // TODO: Здесь потом будет css--></a></li>
           <li><a href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"><!-- // TODO: Здесь потом будет css--></a></li>
