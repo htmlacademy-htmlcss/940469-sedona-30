@@ -109,5 +109,32 @@ li {
   background: url(../img/background-sedona-welcome.jpg) no-repeat var(--color-welcome);
 }
 
-.
+.sedona-in-arizona {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color:  var(--color-header-text);
+}
+
+.reasons {
+  line-height: 26px;
+}
+
+.reasons-list {
+  margin: 0;
+  padding: 0;
+}
+
+.reason-one {
+  background-color: var(--color-welcome);
+}
+
+.reason-one h2{
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--color-background);
+}
+
+
+
 
