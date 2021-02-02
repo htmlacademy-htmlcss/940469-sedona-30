@@ -92,8 +92,7 @@ li {
   color: var(--color-header-text);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
   color: var(--color-welcome);
 }
 
@@ -179,6 +178,44 @@ li {
 }
 
 .date-selection {
-
+  line-height: 24px;
+  text-align: center;
 }
 
+.hotel-search {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--color-background);
+  background-color: var(--color-main-buttons);
+  text-align: center;
+  text-transform: uppercase;
+  width: 568px;
+  height: 86px;
+  border: 0;
+}
+
+.hotel-search:hover {
+  background-color: var(--color-main-buttons-hover);
+}
+
+.hotel-search:active {
+  background-color: var(--color-main-buttons-active);
+}
+
+.hotel-search:active span {
+  opacity: 0.3;
+}
+
+.hotel-selection-modal p {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--color-header-text);
+}
+
+.hotel-selection-modal input[type="text"] {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--color-header-text);
+  text-transform: uppercase;
+}
