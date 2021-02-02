@@ -102,7 +102,7 @@ li {
   opacity: 0.3;
 }
 
-/* // TODO: index.html */
+/* // TODO: Index */
 
 .welcom-sedona {
   min-height: 509px;
@@ -114,10 +114,12 @@ li {
   font-size: 21px;
   line-height: 26px;
   color:  var(--color-header-text);
+  text-align: center;
 }
 
 .reasons {
   line-height: 26px;
+  text-align: center;
 }
 
 .reasons-list {
@@ -125,16 +127,58 @@ li {
   padding: 0;
 }
 
-.reason-one {
+.reason-one, .reason-two {
   background-color: var(--color-welcome);
-}
-
-.reason-one h2{
-  font-weight: bold;
-  font-size: 21px;
   color: var(--color-background);
 }
 
+.reason-one h2, .reason-two h2 {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
 
+.reason-one p, .reason-two p {
+  text-align: center;
+}
 
+.advices-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advices-list h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.reason-three, .reason-four, .reason-five {
+  background-color: var(--color-index-reasons);
+}
+
+.reason-three h2, .reason-four h2, .reason-five h2 {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+.reason-three p, .reason-four p, .reason-five p {
+  text-align: center;
+}
+
+.hotel-selection h2 {
+  visibility: hidden;
+}
+
+.hotel-interest {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.date-selection {
+
+}
 
