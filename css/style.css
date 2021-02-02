@@ -1,4 +1,4 @@
-/* Fonts */
+/* // TODO: Fonts */
 
 @font-face {
   font-family: "PT Sans";
@@ -16,13 +16,13 @@
   font-style: normal;
 }
 
-/* Variables */
+/* // TODO: Variables */
 
 :root {
 
-/* All pages */
+  /* All pages */
 
-  --color-main-text: #000000;
+  --color-header-text: #000000;
   --color-background: #FFFFFF;
   --color-paragraph-text: #333333;
   --color-main-buttons: #766357;
@@ -30,20 +30,20 @@
   --color-search-background: #F2F2F2;
   --color-borders-separators: #E5E5E5;
 
-/* Index */
+  /* Index */
 
   --color-index-reasons: #EEEEEE;
   --color-index-more-less: #A9A9A9;
 
-/* Hotels */
+  /* Catalog */
 
-  --color-hotels-range: #ABABAB;
-  --color-hotels-sort: #CACACA;
-  --color-hotels-rating: #666666;
+  --color-catalog-range: #ABABAB;
+  --color-catalog-sort: #CACACA;
+  --color-catalog-rating: #666666;
 
-/* Styleguide */
+  /* Styleguide */
 
-  --color-hotels-checkbox-disabled: #6A6A6A;
+  --color-catalog-checkbox-disabled: #6A6A6A;
   --color-welcome-buttons-hover: #669EC0;
   --color-welcome-buttons-active: #5496BD;
   --color-main-buttons-hover: #604E43;
@@ -51,3 +51,63 @@
   --color-search-background-hover: #EBEBEB;
   --color-academy-active: #BDBBBC;
 }
+
+
+/* // TODO: Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--color-paragraph-text);
+  text-transform: uppercase;
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* // TODO: Main Navigation */
+
+.main-navigation {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.site-navigation a {
+  color: var(--color-header-text);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--color-welcome);
+}
+
+.site-navigation a:active {
+  color: var(--color-header-text);
+  opacity: 0.3;
+}
+
+/* // TODO: index.html */
+
+.welcom-sedona {
+  min-height: 509px;
+  background: url(../img/background-sedona-welcome.jpg) no-repeat var(--color-welcome);
+}
+
+.
+
