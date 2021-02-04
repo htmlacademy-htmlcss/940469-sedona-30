@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-htmlcss.github.io/940469-sedona-30/6/">
+</head>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#!">Информация</a></li>
+          <li><a href="#!">Фото и видео</a></li>
+          <li><a href="#!">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <img src="img/logo.svg" width="138"  height="70" alt="Логотип города Седона">
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="welcom-sedona">
+        <img class="welcom-image" width="456"  height="350" src="img/welcome-sedona.svg" alt="Welcome to the Gorgeous, Sedona! Because the Grand Canyon sucks!">
+      </div>
+      <h1 class="sedona-in-arizona">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <ol class="reasons-list">
+        <li>
+          <section class="reason-one">
+            <h2>Настоящий городок</h2>
+            <p>&ndash; &#8470;1 &ndash;</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="img/sedona-real-town.jpg" width="800" height="256" alt="Прекрасный пейзаж городка Седона">
+          </section>
+          <section class="advices">
+            <ul class="advices-list">
+              <li>
+                <!-- // TODO: Здесь будет css icon-motel.svg, или будет просто добавлено svg в html-->
+                <h3>Жильё</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li>
+                <!-- // TODO: Здесь будет css icon-motel.svg, или будет просто добавлено svg в html-->
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <!-- // TODO: Здесь будет css icon-motel.svg, или будет просто добавлено svg в html-->
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </section>
+        </li>
+        <li>
+          <section class="reason-two">
+            <img src="img/brige-of-devil.jpg" width="800" height="256" alt="Посетите мост дьявола">
+            <h2>Там есть мост дьявола</h2>
+            <p>&ndash; &#8470;2 &ndash;</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </section>
+        </li>
+        <li>
+          <section class="reason-three">
+            <h2>Небольшая площадь</h2>
+            <p>&ndash; &#8470;3 &ndash;</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </section>
+        </li>
+        <li>
+          <section class="reason-four">
+            <h2>Красивая дорога</h2>
+            <p>&ndash; &#8470;4 &ndash;</p>
+            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+          </section>
+        </li>
+        <li>
+          <section class="reason-five">
+            <h2>Мало туристов</h2>
+            <p>&ndash; &#8470;5 &ndash;</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </section>
+        </li>
+      </ol>
+      <section class="hotel-selection">
+        <h2>Выбор гостиницы в Седоне</h2>
+        <p class="hotel-interest">Заинтересовались?</p>
+        <p class="date-selection">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button  class="hotel-search" type="button" name="hotels"><span>Поиск гостиницы в Седоне</span></button>
+        <!-- // TODO: Форма выбора гостиницы, если нажать на кнопку-->
+        <form class="hotel-selection-modal" action="#!" method="post">
+          <p>
+            <label for="date-in">Дата заезда:</label>
+            <input type="text" name="date-in" id="date-in" placeholder="Выберите дату" value="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-out">Дата выезда:</label>
+            <input type="text" name="date-out" id="date-out" placeholder="Выберите дату" value="4 июля 2017">
+          </p>
+          <p>
+            <label for="adult">Взрослые:</label>
+            <input type="number" name="adult" id="adult" min="0" value="2" step="1">
+            <label for="children">Дети:</label>
+            <input type="number" name="children" id="children" min="0" value="0" step="1">
+          </p>
+          <button class="selection-submit" type="submit" name="search-hotel" id="search-hotel"><span>Найти</span></button>
+        </form>
+      </section>
+      <section class="location">
+        <h2>Местоположение Седоны</h2>
+        <!-- // TODO: Скоро здесь будет карта-->
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p>#visitSEDONA</p>
+      <p>Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
+      <section class="footer-social">
+        <h2>Наши соцсети</h2>
+        <ul class="our-social-networks">
+          <li>
+            <a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"></a>
+          </li>
+          <li>
+            <a href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"></a>
+          </li>
+          <li>
+            <a href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"></a>
+          </li>
+        </ul>
+      </section>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><!-- //TODO: Этот логотип я потом вставлю в виде svg и стилизую --><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии, который ссылается на интенсив первого уровня"></a></p>
+    </footer>
+  </body>
+</html>

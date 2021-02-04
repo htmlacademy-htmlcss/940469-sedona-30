@@ -1,0 +1,574 @@
+/* // TODO: Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* // TODO: Variables */
+
+:root {
+
+  /* All pages */
+
+  --color-header-text: #000000;
+  --color-background: #FFFFFF;
+  --color-paragraph-text: #333333;
+  --color-main-buttons: #766357;
+  --color-welcome: #81B3D2;
+  --color-search-background: #F2F2F2;
+  --color-borders-separators: #E5E5E5;
+
+  /* Index */
+
+  --color-index-reasons: #EEEEEE;
+  --color-index-more-less: #A9A9A9;
+
+  /* Catalog */
+
+  --color-catalog-range: #ABABAB;
+  --color-catalog-sort: #CACACA;
+  --color-catalog-rating: #666666;
+
+  /* Styleguide */
+
+  --color-catalog-checkbox-disabled: #6A6A6A;
+  --color-welcome-buttons-hover: #669EC0;
+  --color-welcome-buttons-active: #5496BD;
+  --color-main-buttons-hover: #604E43;
+  --color-main-buttons-active: #503E33;
+  --color-search-background-hover: #EBEBEB;
+  --color-academy-active: #BDBBBC;
+}
+
+
+/* // TODO: Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--color-paragraph-text);
+  text-transform: uppercase;
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* // TODO: Main Navigation */
+
+.main-navigation {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.site-navigation a {
+  color: var(--color-header-text);
+}
+
+.site-navigation a:hover {
+  color: var(--color-welcome);
+}
+
+.site-navigation a:active {
+  color: var(--color-header-text);
+  opacity: 0.3;
+}
+
+a.current {
+  color: var(--color-main-buttons);
+}
+
+/* // TODO: Index */
+
+.welcom-sedona {
+  min-height: 509px;
+  background: url(../img/background-sedona-welcome.jpg) no-repeat var(--color-welcome);
+}
+
+.sedona-in-arizona {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color:  var(--color-header-text);
+  text-align: center;
+}
+
+/* //TODO: 5 Reasons */
+
+.reasons {
+  line-height: 26px;
+  text-align: center;
+}
+
+.reasons-list {
+  margin: 0;
+  padding: 0;
+}
+
+.reason-one, .reason-two {
+  background-color: var(--color-welcome);
+  color: var(--color-background);
+}
+
+.reason-one h2, .reason-two h2 {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+.reason-one p, .reason-two p {
+  text-align: center;
+}
+
+.advices-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advices-list h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.reason-three, .reason-four, .reason-five {
+  background-color: var(--color-index-reasons);
+}
+
+.reason-three h2, .reason-four h2, .reason-five h2 {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+.reason-three p, .reason-four p, .reason-five p {
+  text-align: center;
+}
+
+/* //TODO: Hotel Selection in Sedona */
+
+.hotel-selection h2 {
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.hotel-interest {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.date-selection {
+  line-height: 24px;
+  text-align: center;
+}
+
+.hotel-search {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--color-background);
+  background-color: var(--color-main-buttons);
+  text-align: center;
+  text-transform: uppercase;
+  width: 568px;
+  height: 86px;
+  outline: 0;
+  border: 0;
+}
+
+.hotel-search:hover {
+  background-color: var(--color-main-buttons-hover);
+}
+
+.hotel-search:active {
+  background-color: var(--color-main-buttons-active);
+}
+
+.hotel-search:active span {
+  opacity: 0.3;
+}
+
+.hotel-selection-modal p {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--color-header-text);
+}
+
+.hotel-selection-modal input[type="text"] {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--color-header-text);
+  text-transform: uppercase;
+  background-color: var(--color-search-background);
+  border: 0;
+  width: 346px;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.hotel-selection-modal input[type="number"] {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--color-header-text);
+  text-transform: uppercase;
+  background-color: var(--color-search-background);
+  border: 0;
+  width: 114px;
+  height: 38px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hotel-selection-modal input[type="text"]:hover, .hotel-selection-modal input[type="number"]:hover {
+  background-color: var(--color-search-background-hover);
+}
+
+.hotel-selection-modal input[type="text"]:focus, .hotel-selection-modal input[type="number"]:focus {
+  border: 2px solid var(--color-borders-separators);
+  background-color: var(--color-background);
+  outline: none;
+}
+
+.selection-submit {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  text-align: center;
+  color: var(--color-background);
+  border: 0;
+  outline: 0;
+  background-color: var(--color-welcome);
+  text-transform: uppercase;
+  width: 458px;
+  height: 58px;
+}
+
+.selection-submit:hover {
+  background-color: var(--color-welcome-buttons-hover);
+}
+
+.selection-submit:active {
+  background-color: var(--color-welcome-buttons-active);
+}
+
+.selection-submit:active span {
+  opacity: 0.3;
+}
+
+/* //TODO: Sedona Location */
+
+.location h2 {
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* //TODO: Catalog */
+
+/* //TODO: Place of Residence in Sedona */
+
+.residence, .residence-results-title {
+  visibility: hidden;
+  line-height: 0;
+  font-size: 0;
+}
+
+/* //TODO: Form Place of Residence in Sedona */
+
+.place-residence-form {
+  background: url(../img/filter-hotels.jpg) no-repeat var(--color-welcome);
+}
+
+.place-residence-form fieldset {
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-background);
+}
+
+.infrastructure, .house-type {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+/*.infrastructure input[type="checkbox"] {
+display: none;
+} */
+
+.service-cost {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.service-cost input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: var(--color-background);
+}
+
+.residence-show {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 137px;
+  height: 36px;
+  color: var(--color-background);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  outline: 0;
+}
+
+.residence-show:hover {
+  background-color: var(--color-background);
+  color: var(--color-header-text)
+}
+
+/* //TODO: Results of Form Place of Residence in Sedona */
+
+.residence-results-find {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.residence-results-sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.residence-sorting, .residence-sorting-arrows {
+  margin: 0;
+  padding: 0;
+}
+
+.residence-sorting a {
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0.3;
+  color: var(--color-header-text);
+  padding: 2px;
+  border-bottom: 1px dashed var(--color-welcome);
+  opacity: 1;
+}
+
+.residence-sorting span {
+  opacity: 0.3;
+}
+
+.residence-sorting span:hover {
+  opacity: 1;
+  color: var(--color-welcome);
+}
+
+.residence-sorting span:active, .residence-sorting a:active {
+  opacity: 1;
+  color: var(--color-header-text);
+  border: 0;
+}
+
+a.residence-sorting-active, a.residence-sorting-active:hover, a.residence-sorting-active:active {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-welcome);
+  opacity: 1;
+  border-bottom: 0;
+}
+
+/* //TODO: Choose your Residence in Sedona */
+
+.choose-residence {
+  margin: 0;
+  padding: 0;
+}
+
+.choose-residence-image {
+  background-color: var(--color-welcome);
+  width: 135px;
+  height: 90px;
+}
+
+.choose-residence-name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.choose-residence-name a {
+  color: var(--color-header-text);
+}
+
+.choose-residence-name a:hover {
+  color: var(--color-welcome);
+}
+
+.choose-residence-name a:active {
+  color: var(--color-header-text);
+  opacity: 0.3;
+}
+
+.choose-residence span {
+  color: var(--color-paragraph-text);
+}
+
+.choose-residence-more {
+  font-weight: bold;
+  color: var(--color-background);
+}
+
+.choose-residence-details span {
+  color: var(--color-background);
+}
+
+p.choose-residence-details {
+  width: 110px;
+  height: 27px;
+  background-color: var(--color-welcome);
+  text-align: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+
+p.choose-residence-details:hover {
+  background-color: var(--color-welcome-buttons-hover);
+}
+
+p.choose-residence-details:active {
+  background-color: var(--color-welcome-buttons-active);
+}
+
+p.choose-residence-details:active span {
+  opacity: 0.3;
+}
+
+.choose-residence-reserving {
+  font-weight: bold;
+  color: var(--color-background);
+}
+
+.choose-residence-reserve span {
+  color: var(--color-background);
+}
+
+p.choose-residence-reserve {
+  width: 142px;
+  height: 27px;
+  background-color: var(--color-main-buttons);
+  text-align: center;
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+
+p.choose-residence-reserve:hover {
+  background-color: var(--color-main-buttons-hover);
+}
+
+p.choose-residence-reserve:active {
+  background-color: var(--color-main-buttons-active);
+}
+
+p.choose-residence-reserve:active span {
+  opacity: 0.3;
+}
+
+.choose-residence-rating {
+  text-align: center;
+  color: var(--color-catalog-rating);
+  width: 110px;
+  height: 27px;
+  background-color: var(--color-search-background);
+  padding-top: 3px;
+  box-sizing: border-box;
+}
+
+/* //TODO: Main Footer */
+
+.main-footer  p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--color-header-text);
+}
+
+.main-footer  a {
+  color: var(--color-header-text);
+}
+
+.footer-social h2 {
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.our-social-networks li {
+  width: 46px;
+  height: 48px;
+  background-color: var(--color-welcome);
+  text-align: center;
+}
+
+.our-social-networks img[src*="twitter"] {
+  padding: 16px 15px;
+}
+
+.our-social-networks img[src*="facebook"] {
+  padding: 13px 17px;
+}
+
+.our-social-networks img[src*="youtube"] {
+  padding: 16px 13px;
+}
+
+.our-social-networks li:hover {
+  background-color: var(--color-welcome-buttons-hover);
+}
+
+.our-social-networks li:active {
+  background-color: var(--color-welcome-buttons-active);
+}
+
+.our-social-networks img[src*="twitter"]:active, .our-social-networks img[src*="facebook"]:active, .our-social-networks img[src*="youtube"]:active {
+  opacity: 0.3;
+}
+
+.main-footer p:last-child {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
