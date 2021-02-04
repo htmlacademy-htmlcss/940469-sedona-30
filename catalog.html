@@ -10,24 +10,24 @@
     <link rel="apple-touch-icon" href="img/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#!">Информация</a></li>
           <li><a href="#!">Фото и видео</a></li>
           <li><a href="#!">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li><a class="current">Гостиницы</a></li>
         </ul>
         <a href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
         </a>
       </nav>
     </header>
-    <main>
-      <h1>Выбор гостиницы в городе Седона</h1>
+    <main class="main-container">
+      <h1 class="residence">Выбор места проживания в городе Седона</h1>
       <!-- // TODO: Этот заголовок я потом скрою-->
-      <form action="#!" method="post">
+      <form class="place-residence-form" action="#!" method="post">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -77,22 +77,22 @@
         </fieldset>
         <button type="submit" name="select-home" id="select-home">Показать</button>
       </form>
-      <section>
-        <h2>Результаты поиска</h2>
+      <section class="residence-results">
+        <h2 class="residence-results-title">Результаты поиска</h2>
         <!-- // TODO: Этот заголовок я потом скрою-->
         <span>Найдено: 3</span>
         <span>Сортировка:</span>
-        <ul>
+        <ul class="residence-sorting">
           <!-- // TODO: Здесь будут ссылки, стилизованные под кнопки -->
           <li><a href="#!">По цене</a></li>
           <li><a href="#!">По типу</a></li>
           <li><a href="#!">По рейтингу</a></li>
         </ul>
-        <ul>
+        <ul class="residence-sorting-arrows">
           <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по убыванию"><!-- // TODO: Здесь будет ссылка стилизованная под кнопку, с svg-элементом--></a></li>
           <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по возрастанию"><!-- // TODO: Здесь будет ссылка стилизованная под кнопку, с svg-элементом--></a></li>
         </ul>
-        <ul>
+        <ul class="choose-residence">
           <li>
             <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Потрясающие виды Седоны и Amara Resort & Spa">
             <h3><a href="#!">Amara Resort &amp; Spa</a></h3>
@@ -138,19 +138,24 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <p>#visitSEDONA</p>
       <p>Тел.:<a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
-      <section>
+      <section class="footer-social">
         <h2>Наши соцсети</h2>
-        <!-- // TODO: Этот заголовок я потом скрою и фон перенесу в css для иконок-->
-        <ul style="background-color:#81B3D2;">
-          <li><a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"><!-- // TODO: Здесь потом будет css--></a></li>
-          <li><a href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"><!-- // TODO: Здесь потом будет css--></a></li>
-          <li><a href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"><!-- // TODO: Здесь потом будет css--></a></li>
+        <ul class="our-social-networks">
+          <li>
+            <a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"></a>
+          </li>
+          <li>
+            <a href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"></a>
+          </li>
+          <li>
+            <a href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"></a>
+          </li>
         </ul>
       </section>
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии, который ссылается на интенсив первого уровня"></a></p>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><!-- //TODO: Этот логотип я потом вставлю в виде svg и стилизую --><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии, который ссылается на интенсив первого уровня"></a></p>
     </footer>
   </body>
 </html>

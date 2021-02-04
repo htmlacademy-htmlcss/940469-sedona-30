@@ -116,6 +116,8 @@ li {
   text-align: center;
 }
 
+/* //TODO: 5 Reasons */
+
 .reasons {
   line-height: 26px;
   text-align: center;
@@ -165,6 +167,8 @@ li {
 .reason-three p, .reason-four p, .reason-five p {
   text-align: center;
 }
+
+/* //TODO: Hotel Selection in Sedona */
 
 .hotel-selection h2 {
   visibility: hidden;
@@ -277,11 +281,19 @@ li {
   opacity: 0.3;
 }
 
+/* //TODO: Sedona Location */
+
 .location h2 {
   visibility: hidden;
   font-size: 0;
   line-height: 0;
 }
+
+/* //TODO: Catalog */
+
+
+
+/* //TODO: Main Footer */
 
 .main-footer  p {
   font-weight: bold;
