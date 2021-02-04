@@ -101,8 +101,9 @@ li {
   opacity: 0.3;
 }
 
-a.current {
+a.current, a.current:hover, a.current:active {
   color: var(--color-main-buttons);
+  opacity: 1;
 }
 
 /* // TODO: Index */
