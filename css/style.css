@@ -110,7 +110,9 @@ a.current, a.current:hover, a.current:active {
 
 .welcom-sedona {
   min-height: 509px;
-  background: url(../img/background-sedona-welcome.jpg) no-repeat var(--color-welcome);
+  background-image: url(../img/background-sedona-welcome.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--color-welcome);
 }
 
 .sedona-in-arizona {
@@ -307,7 +309,9 @@ a.current, a.current:hover, a.current:active {
 /* //TODO: Form Place of Residence in Sedona */
 
 .place-residence-form {
-  background: url(../img/filter-hotels.jpg) no-repeat var(--color-welcome);
+  background-image: url(../img/filter-hotels.jpg);
+  background-repeat:  no-repeat;
+  background-color:  var(--color-welcome);
 }
 
 .place-residence-form fieldset {
@@ -564,7 +568,7 @@ p.choose-residence-reserve:active span {
   background-color: var(--color-welcome-buttons-active);
 }
 
-.our-social-networks img[src*="twitter"]:active, .our-social-networks img[src*="facebook"]:active, .our-social-networks img[src*="youtube"]:active {
+.our-social-networks img:active, .our-social-networks img:active, .our-social-networks img:active {
   opacity: 0.3;
 }
 
