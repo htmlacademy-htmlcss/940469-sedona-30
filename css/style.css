@@ -81,6 +81,17 @@ li {
   list-style: none;
 }
 
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* // TODO: ====== Main Navigation ====== */
 
 .main-navigation {
@@ -187,12 +198,6 @@ a.current:active {
 }
 
 /* //TODO: === Hotel Selection in Sedona === */
-
-.hotel-selection h2 {
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
-}
 
 .hotel-interest {
   font-weight: bold;
@@ -302,23 +307,9 @@ a.current:active {
 }
 
 /* //TODO: === Sedona Location === */
-
-.location h2 {
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
-}
+/* Здесь будет карта */
 
 /* //TODO: ====== Catalog ====== */
-
-/* //TODO: === Place of Residence in Sedona === */
-
-.residence,
-.residence-results-title {
-  visibility: hidden;
-  line-height: 0;
-  font-size: 0;
-}
 
 /* //TODO: === Form Place of Residence in Sedona === */
 
@@ -552,12 +543,6 @@ p.choose-residence-reserve:active span {
 
 .main-footer  a {
   color: var(--color-header-text);
-}
-
-.footer-social h2 {
-  visibility: hidden;
-  font-size: 0;
-  line-height: 0;
 }
 
 .our-social-networks li {
