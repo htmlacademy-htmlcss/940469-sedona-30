@@ -1,4 +1,4 @@
-/* // TODO: Fonts */
+/* // TODO: ====== Fonts ====== */
 
 @font-face {
   font-family: "PT Sans";
@@ -16,11 +16,11 @@
   font-style: normal;
 }
 
-/* // TODO: Variables */
+/* // TODO: ====== Variables ====== */
 
 :root {
 
-  /* All pages */
+  /* === All pages === */
 
   --color-header-text: #000000;
   --color-background: #FFFFFF;
@@ -30,18 +30,18 @@
   --color-search-background: #F2F2F2;
   --color-borders-separators: #E5E5E5;
 
-  /* Index */
+  /* === Index === */
 
   --color-index-reasons: #EEEEEE;
   --color-index-more-less: #A9A9A9;
 
-  /* Catalog */
+  /* === Catalog === */
 
   --color-catalog-range: #ABABAB;
   --color-catalog-sort: #CACACA;
   --color-catalog-rating: #666666;
 
-  /* Styleguide */
+  /* === Styleguide === */
 
   --color-catalog-checkbox-disabled: #6A6A6A;
   --color-welcome-buttons-hover: #669EC0;
@@ -53,7 +53,7 @@
 }
 
 
-/* // TODO: Global */
+/* // TODO: ====== Global ====== */
 
 body {
   min-width: 1200px;
@@ -81,7 +81,7 @@ li {
   list-style: none;
 }
 
-/* // TODO: Main Navigation */
+/* // TODO: ====== Main Navigation ====== */
 
 .main-navigation {
   font-weight: bold;
@@ -108,7 +108,7 @@ a.current:active {
   opacity: 1;
 }
 
-/* // TODO: Index */
+/* // TODO: ====== Index ====== */
 
 .welcom-sedona {
   min-height: 509px;
@@ -125,7 +125,7 @@ a.current:active {
   text-align: center;
 }
 
-/* //TODO: 5 Reasons */
+/* //TODO: === 5 Reasons === */
 
 .reasons {
   line-height: 26px;
@@ -186,7 +186,7 @@ a.current:active {
   text-align: center;
 }
 
-/* //TODO: Hotel Selection in Sedona */
+/* //TODO: === Hotel Selection in Sedona === */
 
 .hotel-selection h2 {
   visibility: hidden;
@@ -301,7 +301,7 @@ a.current:active {
   opacity: 0.3;
 }
 
-/* //TODO: Sedona Location */
+/* //TODO: === Sedona Location === */
 
 .location h2 {
   visibility: hidden;
@@ -309,9 +309,9 @@ a.current:active {
   line-height: 0;
 }
 
-/* //TODO: Catalog */
+/* //TODO: ====== Catalog ====== */
 
-/* //TODO: Place of Residence in Sedona */
+/* //TODO: === Place of Residence in Sedona === */
 
 .residence,
 .residence-results-title {
@@ -320,7 +320,7 @@ a.current:active {
   font-size: 0;
 }
 
-/* //TODO: Form Place of Residence in Sedona */
+/* //TODO: === Form Place of Residence in Sedona === */
 
 .place-residence-form {
   background-image: url(../img/filter-hotels.jpg);
@@ -380,7 +380,7 @@ display: none;
   color: var(--color-header-text)
 }
 
-/* //TODO: Results of Form Place of Residence in Sedona */
+/* //TODO: === Results of Form Place of Residence in Sedona === */
 
 .residence-results-find {
   font-weight: bold;
@@ -435,7 +435,7 @@ a.residence-sorting-active:active {
   border-bottom: 0;
 }
 
-/* //TODO: Choose your Residence in Sedona */
+/* //TODO: === Choose your Residence in Sedona === */
 
 .choose-residence {
   margin: 0;
@@ -541,7 +541,7 @@ p.choose-residence-reserve:active span {
   box-sizing: border-box;
 }
 
-/* //TODO: Main Footer */
+/* //TODO: ====== Main Footer ====== */
 
 .main-footer  p {
   font-weight: bold;
