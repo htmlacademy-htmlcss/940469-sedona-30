@@ -101,7 +101,9 @@ li {
   opacity: 0.3;
 }
 
-a.current, a.current:hover, a.current:active {
+a.current,
+a.current:hover,
+a.current:active {
   color: var(--color-main-buttons);
   opacity: 1;
 }
@@ -135,18 +137,21 @@ a.current, a.current:hover, a.current:active {
   padding: 0;
 }
 
-.reason-one, .reason-two {
+.reason-one,
+.reason-two {
   background-color: var(--color-welcome);
   color: var(--color-background);
 }
 
-.reason-one h2, .reason-two h2 {
+.reason-one h2,
+.reason-two h2 {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
 }
 
-.reason-one p, .reason-two p {
+.reason-one p,
+.reason-two p {
   text-align: center;
 }
 
@@ -161,17 +166,23 @@ a.current, a.current:hover, a.current:active {
   font-size: 21px;
 }
 
-.reason-three, .reason-four, .reason-five {
+.reason-three,
+.reason-four,
+.reason-five {
   background-color: var(--color-index-reasons);
 }
 
-.reason-three h2, .reason-four h2, .reason-five h2 {
+.reason-three h2,
+.reason-four h2,
+.reason-five h2 {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
 }
 
-.reason-three p, .reason-four p, .reason-five p {
+.reason-three p,
+.reason-four p,
+.reason-five p {
   text-align: center;
 }
 
@@ -252,12 +263,14 @@ a.current, a.current:hover, a.current:active {
   box-sizing: border-box;
 }
 
-.hotel-selection-modal input[type="text"]:hover, .hotel-selection-modal input[type="number"]:hover {
+.hotel-selection-modal input[type="text"]:hover,
+.hotel-selection-modal input[type="number"]:hover {
   background-color: var(--color-search-background-hover);
 }
 
-.hotel-selection-modal input[type="text"]:focus, .hotel-selection-modal input[type="number"]:focus {
-  border: 2px solid var(--color-borders-separators);
+.hotel-selection-modal input[type="text"]:focus,
+.hotel-selection-modal input[type="number"]:focus {
+  border: var(--color-borders-separators) solid 2px;
   background-color: var(--color-background);
   outline: none;
 }
@@ -300,7 +313,8 @@ a.current, a.current:hover, a.current:active {
 
 /* //TODO: Place of Residence in Sedona */
 
-.residence, .residence-results-title {
+.residence,
+.residence-results-title {
   visibility: hidden;
   line-height: 0;
   font-size: 0;
@@ -315,14 +329,15 @@ a.current, a.current:hover, a.current:active {
 }
 
 .place-residence-form fieldset {
-  border: none;
+  border: 0;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   color: var(--color-background);
 }
 
-.infrastructure, .house-type {
+.infrastructure,
+.house-type {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -348,7 +363,7 @@ display: none;
 
 .residence-show {
   background-color: transparent;
-  border: 2px solid #FFFFFF;
+  border: var(--color-background) solid 2px;
   box-sizing: border-box;
   border-radius: 2px;
   width: 137px;
@@ -378,7 +393,8 @@ display: none;
   line-height: 18px;
 }
 
-.residence-sorting, .residence-sorting-arrows {
+.residence-sorting,
+.residence-sorting-arrows {
   margin: 0;
   padding: 0;
 }
@@ -389,7 +405,7 @@ display: none;
   opacity: 0.3;
   color: var(--color-header-text);
   padding: 2px;
-  border-bottom: 1px dashed var(--color-welcome);
+  border-bottom: var(--color-welcome) dashed 1px;
   opacity: 1;
 }
 
@@ -397,18 +413,21 @@ display: none;
   opacity: 0.3;
 }
 
-.residence-sorting span:hover {
+.residence-sorting-link:hover span{
   opacity: 1;
   color: var(--color-welcome);
 }
 
-.residence-sorting span:active, .residence-sorting a:active {
+.residence-sorting-link:active span,
+.residence-sorting-link:active {
   opacity: 1;
   color: var(--color-header-text);
   border: 0;
 }
 
-a.residence-sorting-active, a.residence-sorting-active:hover, a.residence-sorting-active:active {
+a.residence-sorting-active,
+a.residence-sorting-active:hover,
+a.residence-sorting-active:active {
   font-size: 12px;
   line-height: 18px;
   color: var(--color-welcome);
@@ -568,7 +587,9 @@ p.choose-residence-reserve:active span {
   background-color: var(--color-welcome-buttons-active);
 }
 
-.our-social-networks img:active, .our-social-networks img:active, .our-social-networks img:active {
+.our-social-networks img:active,
+.our-social-networks img:active,
+.our-social-networks img:active {
   opacity: 0.3;
 }
 
