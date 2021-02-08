@@ -26,7 +26,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="residence">Выбор места проживания в городе Седона</h1>
+      <h1 class="hidden">Выбор места проживания в городе Седона</h1>
       <form class="place-residence-form" action="#!" method="post">
         <fieldset>
           <legend>Инфраструктура:</legend>
@@ -78,75 +78,83 @@
         <button  class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
       </form>
       <section class="residence-results">
-        <h2 class="residence-results-title">Результаты поиска</h2>
+        <h2 class="hidden">Результаты поиска</h2>
         <span class="residence-results-find">Найдено: 3</span>
         <span class="residence-results-sorting">Сортировка:</span>
         <ul class="residence-sorting">
           <li><a class="residence-sorting-active" href="#!">По цене</a></li>
-          <li><a href="#!"><span>По типу</span></a></li>
-          <li><a href="#!"><span>По рейтингу</span></a></li>
+          <li><a class="residence-sorting-link" href="#!"><span>По типу</span></a></li>
+          <li><a class="residence-sorting-link" href="#!"><span>По рейтингу</span></a></li>
         </ul>
         <ul class="residence-sorting-arrows">
           <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по убыванию"><!-- // TODO: Этот логотип я потом вставлю в виде svg и стилизую--></a></li>
           <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по возрастанию"><!-- // TODO: Этот логотип я потом вставлю в виде svg и стилизую--></a></li>
         </ul>
+      </section>
+      <section class="residence-choise">
         <ul class="choose-residence">
           <li>
-            <figure class="choose-residence-image">
-              <img class="choose-residence-img" src="img/amara-resort-spa.jpg" width="135" height="90" alt="Потрясающие виды Седоны и Amara Resort & Spa">
-            </figure>
-            <h3 class="choose-residence-name"><a href="#!">Amara Resort &amp; Spa</a></h3>
-            <span>Гостиница</span>
-            <span>От 4000 Р.</span>
-            <p class="choose-residence-details">
-              <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
-            </p>
-            <p class="choose-residence-reserve">
-              <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
-            </p>
-            <p>
-              <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
-              <img src="img/four-stars.svg" width="76" height="17" alt="Четыре звезды">
-            </p>
-            <p class="choose-residence-rating">Рейтинг: 8,5</p>
+            <article>
+              <div class="choose-residence-image">
+                <img class="choose-residence-img" src="img/amara-resort-spa.jpg" width="135" height="90" alt="Потрясающие виды Седоны и Amara Resort & Spa">
+              </div>
+              <h3 class="choose-residence-name"><a href="#!">Amara Resort &amp; Spa</a></h3>
+              <span>Гостиница</span>
+              <span>От 4000 Р.</span>
+              <p class="choose-residence-details">
+                <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
+              </p>
+              <p class="choose-residence-reserve">
+                <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
+              </p>
+              <p>
+                <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
+                <img src="img/four-stars.svg" width="76" height="17" alt="Четыре звезды">
+              </p>
+              <p class="choose-residence-rating">Рейтинг: 8,5</p>
+            </article>
           </li>
           <li>
-            <figure class="choose-residence-image">
-              <img class="choose-residence-img" src="img/desert-quail-inn.jpg" width="135" height="90" alt="Дорога к Desert Quail Inn">
-            </figure>
-            <h3 class="choose-residence-name"><a href="#!">Desert Quail Inn</a></h3>
-            <span>Мотель</span>
-            <span>От 3000 Р.</span>
-            <p class="choose-residence-details">
-              <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
-            </p>
-            <p class="choose-residence-reserve">
-              <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
-            </p>
-            <p>
-              <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
-              <img src="img/three-stars.svg" width="57" height="17" alt="Три звезды">
-            </p>
-            <p class="choose-residence-rating">Рейтинг: 8,9</p>
+            <article>
+              <div class="choose-residence-image">
+                <img class="choose-residence-img" src="img/desert-quail-inn.jpg" width="135" height="90" alt="Дорога к Desert Quail Inn">
+              </div>
+              <h3 class="choose-residence-name"><a href="#!">Desert Quail Inn</a></h3>
+              <span>Мотель</span>
+              <span>От 3000 Р.</span>
+              <p class="choose-residence-details">
+                <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
+              </p>
+              <p class="choose-residence-reserve">
+                <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
+              </p>
+              <p>
+                <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
+                <img src="img/three-stars.svg" width="57" height="17" alt="Три звезды">
+              </p>
+              <p class="choose-residence-rating">Рейтинг: 8,9</p>
+            </article>
           </li>
           <li>
-            <figure class="choose-residence-image">
-              <img class="choose-residence-img" src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo - уютный уголок среди полей, лесов и гор Седоны">
-            </figure>
-            <h3 class="choose-residence-name"><a href="#!">Villas at Poco Diablo</a></h3>
-            <span>Апартаменты</span>
-            <span>От 2000 Р.</span>
-            <p class="choose-residence-details">
-              <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
-            </p>
-            <p class="choose-residence-reserve">
-              <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
-            </p>
-            <p>
-              <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
-              <img src="img/two-stars.svg" width="38" height="17" alt="Две звезды">
-            </p>
-            <p class="choose-residence-rating">Рейтинг: 9,2</p>
+            <article>
+              <div class="choose-residence-image">
+                <img class="choose-residence-img" src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo - уютный уголок среди полей, лесов и гор Седоны">
+              </div>
+              <h3 class="choose-residence-name"><a href="#!">Villas at Poco Diablo</a></h3>
+              <span>Апартаменты</span>
+              <span>От 2000 Р.</span>
+              <p class="choose-residence-details">
+                <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
+              </p>
+              <p class="choose-residence-reserve">
+                <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
+              </p>
+              <p>
+                <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
+                <img src="img/two-stars.svg" width="38" height="17" alt="Две звезды">
+              </p>
+              <p class="choose-residence-rating">Рейтинг: 9,2</p>
+            </article>
           </li>
         </ul>
       </section>
@@ -155,7 +163,7 @@
       <p>#visitSEDONA</p>
       <p>Тел.:<a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
       <section class="footer-social">
-        <h2>Наши соцсети</h2>
+        <h2 class="hidden">Наши соцсети</h2>
         <ul class="our-social-networks">
           <li>
             <a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"></a>
