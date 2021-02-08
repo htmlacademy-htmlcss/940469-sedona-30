@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Гостиницы | Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+  </head>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="#!">Информация</a></li>
+          <li><a href="#!">Фото и видео</a></li>
+          <li><a href="#!">Карта штата</a></li>
+          <li><a class="current">Гостиницы</a></li>
+        </ul>
+        <a href="index.html">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
+        </a>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="hidden">Выбор места проживания в городе Седона</h1>
+      <form class="place-residence-form" action="#!" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul class="infrastructure">
+            <li>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul class="house-type">
+            <li>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartments" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <p class="service-cost">
+            <label for="cost-from">от</label>
+            <input type="text" name="cost-from" id="cost-from" value="0">
+            <label for="cost-before">до</label>
+            <input type="text" name="cost-before" id="cost-before" value="3000">
+          </p>
+          <label>
+            <input type="range" name="cost"  id="cost" value="80">
+            <!-- Это потом, я так понимаю, нужно будет заменить на div, или на что-то еще-->
+          </label>
+        </fieldset>
+        <button  class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
+      </form>
+      <section class="residence-results">
+        <h2 class="hidden">Результаты поиска</h2>
+        <span class="residence-results-find">Найдено: 3</span>
+        <span class="residence-results-sorting">Сортировка:</span>
+        <ul class="residence-sorting">
+          <li><a class="residence-sorting-active" href="#!">По цене</a></li>
+          <li><a class="residence-sorting-link" href="#!"><span>По типу</span></a></li>
+          <li><a class="residence-sorting-link" href="#!"><span>По рейтингу</span></a></li>
+        </ul>
+        <ul class="residence-sorting-arrows">
+          <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по убыванию"><!-- // TODO: Этот логотип я потом вставлю в виде svg и стилизую--></a></li>
+          <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по возрастанию"><!-- // TODO: Этот логотип я потом вставлю в виде svg и стилизую--></a></li>
+        </ul>
+      </section>
+      <section class="residence-choise">
+        <ul class="choose-residence">
+          <li>
+            <article>
+              <div class="choose-residence-image">
+                <img class="choose-residence-img" src="img/amara-resort-spa.jpg" width="135" height="90" alt="Потрясающие виды Седоны и Amara Resort & Spa">
+              </div>
+              <h3 class="choose-residence-name"><a href="#!">Amara Resort &amp; Spa</a></h3>
+              <span>Гостиница</span>
+              <span>От 4000 Р.</span>
+              <p class="choose-residence-details">
+                <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
+              </p>
+              <p class="choose-residence-reserve">
+                <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
+              </p>
+              <p>
+                <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
+                <img src="img/four-stars.svg" width="76" height="17" alt="Четыре звезды">
+              </p>
+              <p class="choose-residence-rating">Рейтинг: 8,5</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div class="choose-residence-image">
+                <img class="choose-residence-img" src="img/desert-quail-inn.jpg" width="135" height="90" alt="Дорога к Desert Quail Inn">
+              </div>
+              <h3 class="choose-residence-name"><a href="#!">Desert Quail Inn</a></h3>
+              <span>Мотель</span>
+              <span>От 3000 Р.</span>
+              <p class="choose-residence-details">
+                <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
+              </p>
+              <p class="choose-residence-reserve">
+                <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
+              </p>
+              <p>
+                <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
+                <img src="img/three-stars.svg" width="57" height="17" alt="Три звезды">
+              </p>
+              <p class="choose-residence-rating">Рейтинг: 8,9</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div class="choose-residence-image">
+                <img class="choose-residence-img" src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo - уютный уголок среди полей, лесов и гор Седоны">
+              </div>
+              <h3 class="choose-residence-name"><a href="#!">Villas at Poco Diablo</a></h3>
+              <span>Апартаменты</span>
+              <span>От 2000 Р.</span>
+              <p class="choose-residence-details">
+                <a class="choose-residence-more" href="#!"><span>Подробнее</span></a>
+              </p>
+              <p class="choose-residence-reserve">
+                <a class="choose-residence-reserving" href="#!"><span>Забронировать</span></a>
+              </p>
+              <p>
+                <!-- //TODO: Это изображение потом будет перенесено в код в виде svg-->
+                <img src="img/two-stars.svg" width="38" height="17" alt="Две звезды">
+              </p>
+              <p class="choose-residence-rating">Рейтинг: 9,2</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p>#visitSEDONA</p>
+      <p>Тел.:<a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
+      <section class="footer-social">
+        <h2 class="hidden">Наши соцсети</h2>
+        <ul class="our-social-networks">
+          <li>
+            <a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"></a>
+          </li>
+          <li>
+            <a href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"></a>
+          </li>
+          <li>
+            <a href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"></a>
+          </li>
+        </ul>
+      </section>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><!-- //TODO: Этот логотип я потом вставлю в виде svg и стилизую --><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии, который ссылается на интенсив первого уровня"></a></p>
+    </footer>
+  </body>
+</html>
