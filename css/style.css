@@ -3,7 +3,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/PTSans.woff2") format("woff2"),
-    url("../fonts/PTSans.woff") format("woff");
+  url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    url("../fonts/PTSans-Bold.woff") format("woff");
+  url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -534,14 +534,14 @@ p.choose-residence-reserve:active span {
 
 /* //TODO: ====== Main Footer ====== */
 
-.main-footer  p {
+.main-footer p, .main-footer-grid {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--color-header-text);
 }
 
-.main-footer  a {
+.main-footer a {
   color: var(--color-header-text);
 }
 
@@ -578,8 +578,282 @@ p.choose-residence-reserve:active span {
   opacity: 0.3;
 }
 
-.main-footer p:last-child {
+p.main-footer-academy {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+}
+
+/* //TODO: ====== Grid ====== */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.main-navigation {
+  display: grid;
+  align-content: start;
+  height: 56px;
+}
+
+.main-navigation img {
+  z-index: 100;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main-navigation a {
+  z-index: 100;
+  margin: auto;
+  overflow: hidden;
+}
+
+.site-navigation {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+  display: grid;
+  height: 56px;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 3fr));
+  grid-auto-flow: column;
+  margin: 0 72px;
+  justify-items: center;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.welcom-sedona {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+
+.sedona-arizona-grid {
+  width: 470px;
+  min-height: 80px;
+  margin: 43px auto 16px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.reasons {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+  max-width: 1200px;
+  margin: auto auto 51px auto;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.reasons-list {
+  display: grid;
+  outline: 5px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -5px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.reason-one {
+  display: grid;
+  outline: 5px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -5px;
+  grid-template-columns: 1fr 2fr;
+}
+
+.reason-two {
+  display: grid;
+  outline: 5px solid rgba(200, 250, 250, 0.7);
+  outline-offset: -5px;
+  grid-template-columns: 2fr 1fr;
+}
+
+.reason-one-grid, .reason-two-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.reason-one-grid h2, .reason-two-grid h2 {
+  margin-top: 47px;
+}
+
+.reason-one-grid p:last-child, .reason-two-grid p:last-child{
+  margin-bottom: 54px;
+  max-width: 297px;
+}
+
+.advices {
+  outline: 5px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -5px;
+  display: grid;
+}
+
+.advice-one {
+  background-image: url(../img/icon-motel.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-two {
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-three {
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-one h3,  .advice-two h3, .advice-three h3{
+  margin-top:  160px;
+}
+
+.advice-one p, .advice-two p, .advice-three p{
+  margin-bottom:  ;
+  max-width: 300px;
+  margin: auto auto 82px auto;
+}
+
+.advices-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.three-reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-three, .reason-four, .reason-five {
+  display: grid;
+  padding-bottom: 54px;
+  padding-top: 47px;
+}
+
+.reason-three p, .reason-four p, .reason-five p {
+  max-width: 255px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.hotel-selection-wrapper {
+  margin-right:  auto;
+  margin-left:  auto;
+  width: 1200px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hotel-interest {
+  outline: 5px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -5px;
+  margin-top: 58px;
+}
+
+.date-selection {
+  outline: 5px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -5px;
+  max-width: 450px;
+  margin-right:  auto;
+  margin-left:  auto;
+  margin-bottom: 48px;
+}
+
+.hotel-selection-modal {
+  margin-right: auto;
+  margin-left: auto;
+  width: 568px;
+  height: 395px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  display: grid;
+  justify-content: center;
+  padding-top: 45px;
+  box-sizing: border-box;
+  margin-bottom: 78px;
+  padding-bottom:
+}
+
+.selection-submit {
+  margin-bottom: 54px;
+  margin-top: 45px;
+}
+
+.hotel-selection-modal p {
+  outline: 5px solid rgba(0, 0, 70, 0.7);
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-gap: 21px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+p.hotel-selection-number {
+  outline: 5px solid rgba(0, 200, 200, 0.7);
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  grid-gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  max-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer-grid {
+  display: grid;
+  justify-content: center;
+  outline: 5px solid rgba(255, 50, 50, 0.7);
+  outline-offset: -5px;
+  text-align: center;
+}
+
+.our-social-networks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  outline: 5px solid rgba(255, 50, 200, 0.7);
+  outline-offset: -5px;
+  justify-content: center;
+  grid-gap: 6px;
+  margin-left: -45px;
+}
+
+.footer-tel {
+  margin-top: -15px;
+  margin-bottom: 36px;
+}
+
+.main-footer-academy {
+  display: grid;
+  grid-template-columns:  auto auto;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
 }
