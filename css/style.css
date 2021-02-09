@@ -3,7 +3,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/PTSans.woff2") format("woff2"),
-  url("../fonts/PTSans.woff") format("woff");
+    url("../fonts/PTSans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-  url("../fonts/PTSans-Bold.woff") format("woff");
+    url("../fonts/PTSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -632,6 +632,10 @@ p.main-footer-academy {
   justify-items: center;
 }
 
+.site-navigation:first-child, .site-navigation:last-child {
+  margin: 0;
+  padding: 0;
+}
 /*-- --------------------------------------------------------- --*/
 
 .welcom-sedona {
@@ -857,3 +861,70 @@ p.hotel-selection-number {
   justify-content: center;
   grid-gap: 8px;
 }
+
+/* //TODO: ====== Grid Catalog ====== */
+
+.place-residence-form {
+  display: grid;
+  min-height: 217px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-gap: 46px;
+  padding-left: 54px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.infrastructure, .house-type {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  outline: 5px solid rgba(100, 50, 200, 0.7);
+  outline-offset: -5px;
+  box-sizing: border-box;
+}
+
+.residence-form-one legend, .residence-form-two legend {
+  margin-bottom: 25px;
+}
+
+.residence-form-three {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  outline: 5px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.residence-form-three input[type="text"] {
+  width: 30px;
+}
+
+.service-cost {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 317px;
+  height: 36px;
+  text-align: center;
+}
+
+.residence-form-three legend {
+  text-align: left;
+}
+
+.residence-form-three input[type="range"] {
+  width: 317px;
+}
+
+.residence-show-button {
+  text-align: center;
+}
+
+/*-- --------------------------------------------------------- --*/
+

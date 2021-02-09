@@ -27,54 +27,62 @@
     <main class="main-container">
       <h1 class="hidden">Выбор места проживания в городе Седона</h1>
       <form class="place-residence-form" action="#!" method="post">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <ul class="infrastructure">
-            <li>
-              <input type="checkbox" name="pool" id="pool" checked>
-              <label for="pool">Бассейн</label>
-            </li>
-            <li>
-              <input type="checkbox" name="parking" id="parking">
-              <label for="parking">Парковка</label>
-            </li>
-            <li>
-              <input type="checkbox" name="wi-fi" id="wi-fi">
-              <label for="wi-fi">Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul class="house-type">
-            <li>
-              <input type="checkbox" name="hotel" id="hotel" checked>
-              <label for="hotel">Гостиница</label>
-            </li>
-            <li>
-              <input type="checkbox" name="motel" id="motel" checked>
-              <label for="motel">Мотель</label>
-            </li>
-            <li>
-              <input type="checkbox" name="apartments" id="apartments" checked>
-              <label for="apartments">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Стоимость в сутки (Р):</legend>
-          <p class="service-cost">
-            <label for="cost-from">от</label>
-            <input type="text" name="cost-from" id="cost-from" value="0">
-            <label for="cost-before">до</label>
-            <input type="text" name="cost-before" id="cost-before" value="3000">
+        <div class="residence-form-one">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="infrastructure">
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="residence-form-two">
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="house-type">
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="residence-form-three">
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <p class="service-cost">
+              <label for="cost-from">от</label>
+              <input type="text" name="cost-from" id="cost-from" value="0">
+              <label for="cost-before">до</label>
+              <input type="text" name="cost-before" id="cost-before" value="3000">
+            </p>
+            <label>
+              <input type="range" name="cost"  id="cost" value="80">
+              <!-- Это потом, я так понимаю, нужно будет заменить на div, или на что-то еще-->
+            </label>
+          </fieldset>
+          <p class="residence-show-button">
+            <button  class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
           </p>
-          <label>
-            <input type="range" name="cost"  id="cost" value="80">
-            <!-- Это потом, я так понимаю, нужно будет заменить на div, или на что-то еще-->
-          </label>
-        </fieldset>
-        <button  class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
+        </div>
       </form>
       <section class="residence-results">
         <h2 class="hidden">Результаты поиска</h2>
