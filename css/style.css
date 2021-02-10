@@ -600,8 +600,8 @@ p.main-footer-academy {
 }
 
 .main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -2px;
 }
 
 .main-navigation {
@@ -623,8 +623,8 @@ p.main-footer-academy {
 }
 
 .site-navigation {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -2px;
   display: grid;
   height: 56px;
   align-content: center;
@@ -653,13 +653,13 @@ p.main-footer-academy {
   width: 470px;
   min-height: 80px;
   margin: 43px auto 16px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -2px;
 }
 
 .reasons {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -2px;
   max-width: 1200px;
   margin: auto auto 51px auto;
 }
@@ -668,23 +668,23 @@ p.main-footer-academy {
 
 .reasons-list {
   display: grid;
-  outline: 5px solid rgba(0, 200, 200, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -2px;
   margin: 0 auto;
   max-width: 1200px;
 }
 
 .reason-one {
   display: grid;
-  outline: 5px solid rgba(0, 200, 0, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -2px;
   grid-template-columns: 1fr 2fr;
 }
 
 .reason-two {
   display: grid;
-  outline: 5px solid rgba(200, 250, 250, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(200, 250, 250, 0.7);
+  outline-offset: -2px;
   grid-template-columns: 2fr 1fr;
 }
 
@@ -704,8 +704,8 @@ p.main-footer-academy {
 }
 
 .advices {
-  outline: 5px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -2px;
   display: grid;
 }
 
@@ -772,14 +772,14 @@ p.main-footer-academy {
 }
 
 .hotel-interest {
-  outline: 5px solid rgba(0, 200, 0, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -2px;
   margin-top: 58px;
 }
 
 .date-selection {
-  outline: 5px solid rgba(0, 200, 0, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -2px;
   max-width: 450px;
   margin-right:  auto;
   margin-left:  auto;
@@ -806,7 +806,8 @@ p.main-footer-academy {
 }
 
 .hotel-selection-modal p {
-  outline: 5px solid rgba(0, 0, 70, 0.7);
+  outline: 2px solid rgba(0, 0, 70, 0.7);
+  outline-offset: -2px;
   display: grid;
   grid-template-columns:auto auto;
   grid-gap: 21px;
@@ -815,7 +816,8 @@ p.main-footer-academy {
 }
 
 p.hotel-selection-number {
-  outline: 5px solid rgba(0, 200, 200, 0.7);
+  outline: 2px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -2px;
   display: grid;
   grid-template-columns:auto auto auto auto;
   grid-gap: 40px;
@@ -824,8 +826,8 @@ p.hotel-selection-number {
 }
 
 .main-footer {
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -2px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   max-height: 120px;
@@ -836,16 +838,16 @@ p.hotel-selection-number {
 .main-footer-grid {
   display: grid;
   justify-content: center;
-  outline: 5px solid rgba(255, 50, 50, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(255, 50, 50, 0.7);
+  outline-offset: -2px;
   text-align: center;
 }
 
 .our-social-networks {
   display: grid;
   grid-template-columns: auto auto auto;
-  outline: 5px solid rgba(255, 50, 200, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(255, 50, 200, 0.7);
+  outline-offset: -2px;
   justify-content: center;
   grid-gap: 6px;
   margin-left: -45px;
@@ -884,8 +886,8 @@ p.hotel-selection-number {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 30px;
-  outline: 5px solid rgba(100, 50, 200, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(100, 50, 200, 0.7);
+  outline-offset: -2px;
   box-sizing: border-box;
 }
 
@@ -897,8 +899,8 @@ p.hotel-selection-number {
   display: grid;
   justify-content: flex-end;
   align-items: center;
-  outline: 5px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -2px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -938,7 +940,8 @@ p.hotel-selection-number {
   grid-template-columns: 1fr 1fr 2fr 4fr;
   align-items: flex-start;
   box-sizing: border-box;
-  outline: 5px solid rgba(0, 50, 200, 0.7);
+  outline: 2px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -2px;
   grid-gap: 46px;
 }
 
@@ -947,7 +950,7 @@ p.hotel-selection-number {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: flex-start;
   align-items: center;
-  outline: 5px solid rgba(0, 50, 200, 0.7);
+  outline: 2px solid rgba(0, 50, 200, 0.7);
   outline-offset: -2px;
   margin-left: -50px;
 }
@@ -981,8 +984,8 @@ p.hotel-selection-number {
   min-height: 150px;
   display: grid;
   grid-template-columns:  1fr 3fr 3fr;
-  outline: 5px solid rgba(0, 200, 200, 0.7);
-  outline-offset: -5px;
+  outline: 2px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -2px;
   align-items: center;
   justify-content: center;
 
@@ -995,8 +998,8 @@ p.hotel-selection-number {
 .choose-residence-buttons {
   display: grid;
   grid-template-columns: auto auto;
-  outline: 1px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -1px;
+  outline: 2px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -2px;
   box-sizing: border-box;
   justify-content: flex-start;
   grid-gap: 6px;
@@ -1012,8 +1015,8 @@ p.hotel-selection-number {
   display: grid;
   justify-content: flex-end;
   grid-template-rows: 1fr 1fr;
-  outline: 1px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -1px;
+  outline: 2px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -2px;
   align-content: flex-end;
   text-align: right;
   grid-row-gap: 10px;
