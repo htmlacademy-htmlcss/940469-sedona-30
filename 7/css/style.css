@@ -599,6 +599,11 @@ p.main-footer-academy {
   align-content: start;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .main-header {
   outline: 2px solid rgba(0, 255, 0, 0.7);
   outline-offset: -2px;
@@ -674,36 +679,53 @@ p.main-footer-academy {
   max-width: 1200px;
 }
 
-.reason-one {
+.reason-one-li {
   display: grid;
   outline: 2px solid rgba(0, 200, 0, 0.7);
   outline-offset: -2px;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 256px 57%;
 }
 
-.reason-two {
+.reason-one {
+  grid-column: 1/2;
+  grid-row: 1;
+  display: grid;
+  padding-top: 22px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.reason-one-image {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.reason-two-li {
   display: grid;
   outline: 2px solid rgba(200, 250, 250, 0.7);
   outline-offset: -2px;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 256px;
 }
 
-.reason-one-grid, .reason-two-grid {
+.reason-two {
   display: grid;
   align-items: center;
   justify-content: center;
+  padding-top: 20px;
+  max-height: 256px;
+  padding-bottom: 32px;
 }
 
-.reason-one-grid h2, .reason-two-grid h2 {
-  margin-top: 47px;
-}
-
-.reason-one-grid p:last-child, .reason-two-grid p:last-child{
-  margin-bottom: 54px;
+.reason-one p:last-child, .reason-two p:last-child{
   max-width: 297px;
 }
 
 .advices {
+  grid-column: 1/4;
+  grid-row: 2;
   outline: 2px solid rgba(0, 0, 200, 0.7);
   outline-offset: -2px;
   display: grid;
