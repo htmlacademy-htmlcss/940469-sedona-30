@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="img/180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <body class="page-body">
+  <body class="page-body container">
     <header class="main-header">
       <!-- // TODO: Здесь потом будет flex-box с псевдоэлементом-->
       <nav class="main-navigation">
@@ -32,15 +32,15 @@
       </div>
       <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ol class="reasons-list">
-        <li>
+        <li class="reason-one-li">
           <section class="reason-one">
-            <div class="reason-one-grid">
-              <h2>Настоящий городок</h2>
-              <p>&ndash; &#8470;1 &ndash;</p>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <img src="img/sedona-real-town.jpg" width="800" height="256" alt="Прекрасный пейзаж городка Седона">
+            <h2>Настоящий городок</h2>
+            <p>&ndash; &#8470;1 &ndash;</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </section>
+          <div class="reason-one-image">
+            <img src="img/sedona-real-town.jpg" width="800" height="256" alt="Прекрасный пейзаж городка Седона">
+          </div>
           <section class="advices">
             <ul class="advices-list">
               <li class="advice-one">
@@ -61,14 +61,14 @@
             </ul>
           </section>
         </li>
-        <li>
-          <section class="reason-two">
+        <li class="reason-two-li">
+          <div class="reason-two-image">
             <img src="img/brige-of-devil.jpg" width="800" height="256" alt="Посетите мост дьявола">
-            <div class="reason-two-grid">
-              <h2>Там есть мост дьявола</h2>
-              <p>&ndash; &#8470;2 &ndash;</p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
+          </div>
+          <section class="reason-two">
+            <h2>Там есть мост дьявола</h2>
+            <p>&ndash; &#8470;2 &ndash;</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </section>
         </li>
         <li>
