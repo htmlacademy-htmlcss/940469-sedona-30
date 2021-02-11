@@ -534,14 +534,14 @@ p.choose-residence-reserve:active span {
 
 /* //TODO: ====== Main Footer ====== */
 
-.main-footer  p {
+.main-footer p, .main-footer-grid {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--color-header-text);
 }
 
-.main-footer  a {
+.main-footer a {
   color: var(--color-header-text);
 }
 
@@ -578,8 +578,469 @@ p.choose-residence-reserve:active span {
   opacity: 0.3;
 }
 
-.main-footer p:last-child {
+p.main-footer-academy {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+}
+
+/* //TODO: Здесь начинается сетка. Я потом вставлю ее в общий код, когда она будет готова. */
+
+/* //TODO: ====== Grid Index ====== */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-header {
+  outline: 2px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -2px;
+}
+
+.main-navigation {
+  display: grid;
+  align-content: start;
+  height: 56px;
+}
+
+.main-navigation img {
+  z-index: 100;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main-navigation a {
+  z-index: 100;
+  margin: auto;
+  overflow: hidden;
+}
+
+.site-navigation {
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -2px;
+  display: grid;
+  height: 56px;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 3fr));
+  grid-auto-flow: column;
+  margin: 0 72px;
+  justify-items: center;
+}
+
+.site-navigation:first-child, .site-navigation:last-child {
+  margin: 0;
+  padding: 0;
+}
+/*-- --------------------------------------------------------- --*/
+
+.welcom-sedona {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+
+.sedona-arizona-grid {
+  width: 470px;
+  min-height: 80px;
+  margin: 43px auto 16px;
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -2px;
+}
+
+.reasons {
+  outline: 2px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -2px;
+  max-width: 1200px;
+  margin: auto auto 51px auto;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.reasons-list {
+  display: grid;
+  outline: 2px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -2px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.reason-one-li {
+  display: grid;
+  outline: 2px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -2px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 256px 57%;
+}
+
+.reason-one {
+  grid-column: 1/2;
+  grid-row: 1;
+  display: grid;
+  padding-top: 22px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.reason-one-image {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.reason-two-li {
+  display: grid;
+  outline: 2px solid rgba(200, 250, 250, 0.7);
+  outline-offset: -2px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 256px;
+}
+
+.reason-two {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  max-height: 256px;
+  padding-bottom: 32px;
+}
+
+.reason-one p:last-child, .reason-two p:last-child{
+  max-width: 310px;
+}
+
+.advices {
+  grid-column: 1/4;
+  grid-row: 2;
+  outline: 2px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -2px;
+  display: grid;
+}
+
+.advice-one {
+  background-image: url(../img/icon-motel.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-two {
+  background-image: url(../img/icon-burger.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-three {
+  background-image: url(../img/icon-gift.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+.advice-one h3,  .advice-two h3, .advice-three h3{
+  margin-top:  160px;
+}
+
+.advice-one p, .advice-two p, .advice-three p{
+  margin-bottom:  ;
+  max-width: 300px;
+  margin: auto auto 82px auto;
+}
+
+.advices-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.three-reasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-three, .reason-four, .reason-five {
+  display: grid;
+  padding-bottom: 54px;
+  padding-top: 47px;
+}
+
+.reason-three p, .reason-four p, .reason-five p {
+  max-width: 255px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.hotel-selection-wrapper {
+  margin-right:  auto;
+  margin-left:  auto;
+  width: 1200px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.hotel-interest {
+  outline: 2px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -2px;
+  margin-top: 58px;
+}
+
+.date-selection {
+  outline: 2px solid rgba(0, 200, 0, 0.7);
+  outline-offset: -2px;
+  max-width: 450px;
+  margin-right:  auto;
+  margin-left:  auto;
+  margin-bottom: 48px;
+}
+
+.hotel-selection-modal {
+  margin-right: auto;
+  margin-left: auto;
+  width: 568px;
+  height: 395px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  display: grid;
+  justify-content: center;
+  padding-top: 45px;
+  box-sizing: border-box;
+  margin-bottom: 78px;
+  padding-bottom:
+}
+
+.selection-submit {
+  margin-bottom: 54px;
+  margin-top: 45px;
+}
+
+.hotel-selection-modal p {
+  outline: 2px solid rgba(0, 0, 70, 0.7);
+  outline-offset: -2px;
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-gap: 21px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+p.hotel-selection-number {
+  outline: 2px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -2px;
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  grid-gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-footer {
+  outline: 2px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -2px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  max-height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-footer-grid {
+  display: grid;
+  justify-content: center;
+  outline: 2px solid rgba(255, 50, 50, 0.7);
+  outline-offset: -2px;
+  text-align: center;
+}
+
+.our-social-networks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  outline: 2px solid rgba(255, 50, 200, 0.7);
+  outline-offset: -2px;
+  justify-content: center;
+  grid-gap: 6px;
+  margin-left: -45px;
+}
+
+.footer-tel {
+  margin-top: -15px;
+  margin-bottom: 36px;
+}
+
+.main-footer-academy {
+  display: grid;
+  grid-template-columns:  auto auto;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+}
+
+/* //TODO: ====== Grid Catalog ====== */
+
+.place-residence-form {
+  display: grid;
+  min-height: 217px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-gap: 46px;
+  padding-left: 54px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.infrastructure, .house-type {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  outline: 2px solid rgba(100, 50, 200, 0.7);
+  outline-offset: -2px;
+  box-sizing: border-box;
+}
+
+.residence-form-one legend, .residence-form-two legend {
+  margin-bottom: 25px;
+}
+
+.residence-form-three {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  outline: 2px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.residence-form-three input[type="text"] {
+  width: 30px;
+}
+
+.service-cost {
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 317px;
+  height: 36px;
+  text-align: center;
+}
+
+.residence-form-three legend {
+  text-align: left;
+}
+
+.residence-form-three input[type="range"] {
+  width: 317px;
+}
+
+.residence-show-button {
+  text-align: center;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.residence-results {
+  margin: 29px auto;
+  padding-left: 65px;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 4fr;
+  align-items: flex-start;
+  box-sizing: border-box;
+  outline: 2px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -2px;
+  grid-gap: 46px;
+}
+
+.residence-sorting {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  outline: 2px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -2px;
+  margin-left: -50px;
+}
+
+.residence-sorting-arrows {
+  display: grid;
+  justify-content: flex-end;
+  padding-right: 79px;
+  grid-template-columns: auto auto;
+  align-items: flex-end;
+  box-sizing: border-box;
+  grid-gap: 12px;
+}
+
+/*-- --------------------------------------------------------- --*/
+
+.residence-choise {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.choose-residence {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 0;
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.choose-residence article {
+  min-height: 150px;
+  display: grid;
+  grid-template-columns:  1fr 3fr 3fr;
+  outline: 2px solid rgba(0, 200, 200, 0.7);
+  outline-offset: -2px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.choose-residence-residence {
+  padding-left: 10px;
+}
+
+.choose-residence-buttons {
+  display: grid;
+  grid-template-columns: auto auto;
+  outline: 2px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -2px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  grid-gap: 6px;
+  margin-top: 5px;
+}
+
+.choose-residence-name {
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.hoose-residence-rate {
+  display: grid;
+  justify-content: flex-end;
+  grid-template-rows: 1fr 1fr;
+  outline: 2px solid rgba(0, 0, 200, 0.7);
+  outline-offset: -2px;
+  align-content: flex-end;
+  text-align: right;
+  grid-row-gap: 10px;
+  margin-top: 10px;
 }
