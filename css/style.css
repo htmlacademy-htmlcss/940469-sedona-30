@@ -123,8 +123,10 @@ a.current:active {
 
 .welcom-sedona {
   min-height: 509px;
-  background-image: url(../img/background-sedona-welcome.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../img/shape-welcome.png), url(../img/background-sedona-welcome.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center top;
+  background-size: auto, cover;
   background-color: var(--color-welcome);
 }
 
@@ -731,9 +733,9 @@ p.main-footer-academy {
   grid-row: 1;
 }
 
-.reason-one h2 {
+.reason-one h2, .reason-two h2 {
   margin-top: 47px;
-  max-width: 122px;
+  max-width: 150px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -751,13 +753,12 @@ p.main-footer-academy {
   display: grid;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
   max-height: 256px;
-  padding-bottom: 32px;
+  padding-top: 2px;
 }
 
 .reason-one p:last-child, .reason-two p:last-child{
-  max-width: 300px;
+  max-width: 310px;
   margin-top: 6px;
   margin-bottom: 52px;
 }
@@ -781,7 +782,7 @@ p.main-footer-academy {
 .advice-two {
   background-image: url(../img/icon-burger.svg);
   background-repeat: no-repeat;
-  background-position: 50% 24%;
+  background-position: 50% 23%;
   width: 400px;
   min-height: 330px;
 }
@@ -789,7 +790,7 @@ p.main-footer-academy {
 .advice-three {
   background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
-  background-position: 50% 22%;
+  background-position: 50% 21%;
   width: 400px;
   min-height: 330px;
 }
@@ -810,22 +811,45 @@ p.main-footer-academy {
 }
 
 .three-reasons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 .reason-three, .reason-four, .reason-five {
   display: grid;
-  padding-bottom: 54px;
   padding-top: 47px;
+  padding-bottom: 39px;
+  width: 400px;
+}
+
+.reason-three h2, .reason-four h2, .reason-five h2 {
+  max-width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 11px;
+  margin-top: 0;
 }
 
 .reason-three p, .reason-four p, .reason-five p {
-  max-width: 255px;
+  max-width: 260px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 15px;
+}
+
+.reason-three p:last-child, .reason-four p:last-child {
+  max-width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.reason-five p:last-child {
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
 }
 
 /*-- --------------------------------------------------------- --*/
