@@ -612,37 +612,65 @@ p.main-footer-academy {
 .main-navigation {
   display: grid;
   align-content: start;
-  height: 56px;
+  max-height: 56px;
+  position: relative;
+  max-width: 1200px;
 }
 
 .main-navigation img {
   z-index: 100;
   margin: auto;
   overflow: hidden;
+  position: absolute;
+  left: 531px;
 }
 
 .main-navigation a {
   z-index: 100;
   margin: auto;
   overflow: hidden;
+  left: 531px;
 }
 
 .site-navigation {
   outline: 2px solid rgba(0, 0, 255, 0.7);
   outline-offset: -2px;
-  display: grid;
-  height: 56px;
-  align-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 3fr));
-  grid-auto-flow: column;
-  margin: 0 72px;
-  justify-items: center;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  min-height: 56px;
 }
 
-.site-navigation:first-child, .site-navigation:last-child {
-  margin: 0;
+.site-navigation li {
+  width: 25%;
+  outline: 2px solid rgba(0, 200, 255, 0.7);
+  outline-offset: -2px;
+}
+
+.site-navigation:first-child,
+.site-navigation:last-child {
+  margin-top: 0;
   padding: 0;
 }
+
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+  text-align:left;
+}
+
+.site-navigation li:last-child,
+.site-navigation li:nth-child(3)  {
+  text-align: right;
+}
+
+.site-navigation li:first-child a {
+  margin-left: 72px;
+}
+
+.site-navigation li:last-child a {
+  margin-right: 72px;
+}
+
 /*-- --------------------------------------------------------- --*/
 
 .welcom-sedona {
@@ -720,7 +748,7 @@ p.main-footer-academy {
 }
 
 .reason-one p:last-child, .reason-two p:last-child{
-  max-width: 310px;
+  max-width: 300px;
 }
 
 .advices {
