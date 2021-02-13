@@ -164,6 +164,7 @@ a.current:active {
 .reason-one p,
 .reason-two p {
   text-align: center;
+  line-height: 24px;
 }
 
 .advices-list {
@@ -586,7 +587,7 @@ p.main-footer-academy {
 
 /* //TODO: Здесь начинается сетка. Я потом вставлю ее в общий код, когда она будет готова. */
 
-/* //TODO: ====== Grid Index ====== */
+/* //TODO: ====== Grid & Flexbox Index ====== */
 
 .page {
   height: 100%;
@@ -719,15 +720,23 @@ p.main-footer-academy {
   grid-column: 1/2;
   grid-row: 1;
   display: grid;
-  padding-top: 22px;
+  margin: 0;
+  padding: 0;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .reason-one-image {
   grid-column: 2/4;
   grid-row: 1;
+}
+
+.reason-one h2 {
+  margin-top: 47px;
+  max-width: 122px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .reason-two-li {
@@ -749,6 +758,8 @@ p.main-footer-academy {
 
 .reason-one p:last-child, .reason-two p:last-child{
   max-width: 300px;
+  margin-top: 6px;
+  margin-bottom: 52px;
 }
 
 .advices {
@@ -756,25 +767,31 @@ p.main-footer-academy {
   grid-row: 2;
   outline: 2px solid rgba(0, 0, 200, 0.7);
   outline-offset: -2px;
-  display: grid;
+  display: flex;
 }
 
 .advice-one {
   background-image: url(../img/icon-motel.svg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 23%;
+  width: 400px;
+  min-height: 330px;
 }
 
 .advice-two {
   background-image: url(../img/icon-burger.svg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 24%;
+  width: 400px;
+  min-height: 330px;
 }
 
 .advice-three {
   background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 22%;
+  width: 400px;
+  min-height: 330px;
 }
 
 .advice-one h3,  .advice-two h3, .advice-three h3{
@@ -782,9 +799,9 @@ p.main-footer-academy {
 }
 
 .advice-one p, .advice-two p, .advice-three p{
-  margin-bottom:  ;
   max-width: 300px;
-  margin: auto auto 82px auto;
+  padding-top: 5px;
+  margin: auto;
 }
 
 .advices-list {
