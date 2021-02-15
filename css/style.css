@@ -854,6 +854,12 @@ p.main-footer-academy {
 
 /*-- --------------------------------------------------------- --*/
 
+.hotel-selection {
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+}
+
 .hotel-selection-wrapper {
   margin: 0 auto;
   width: 1200px;
@@ -1022,6 +1028,14 @@ p.hotel-selection-number {
 
 .hotel-selection-number {
   margin-bottom: 5px;
+}
+
+.hotel-selection-modal {
+  z-index: 200;
+  position: absolute;
+  overflow: hidden;
+  background-color: var(--color-background);
+  left: 316px;
 }
 
 .main-footer {
