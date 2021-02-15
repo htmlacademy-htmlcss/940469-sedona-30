@@ -1119,6 +1119,14 @@ p.hotel-selection-number {
   margin-left: 9px;
 }
 
+.main-footer-academy a:hover path{
+  fill: var(--color-welcome);
+}
+
+.main-footer-academy a:active path{
+  fill: var(--color-academy-active);
+}
+
 /* //TODO: ====== Grid Catalog ====== */
 
 .place-residence-form {
