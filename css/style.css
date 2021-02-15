@@ -543,6 +543,11 @@ p.choose-residence-reserve:active span {
 
 /* //TODO: ====== Main Footer ====== */
 
+footer {
+  width: 1200px;
+  box-sizing: border-box;
+}
+
 .main-footer p, .main-footer-grid {
   font-weight: bold;
   font-size: 21px;
@@ -1059,6 +1064,7 @@ p.hotel-selection-number {
   max-height: 120px;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .footer-social {
@@ -1072,6 +1078,9 @@ p.hotel-selection-number {
   outline-offset: -2px;
   text-align: center;
   width: 400px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  margin-left: 43px;
 }
 
 .our-social-networks {
@@ -1079,21 +1088,35 @@ p.hotel-selection-number {
   outline: 2px solid rgba(255, 50, 200, 0.7);
   outline-offset: -2px;
   justify-content: center;
-  margin-left: -45px;
+  margin-right: 75px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.our-social-networks li {
+  margin-right: 6px;
 }
 
 .footer-tel {
-  margin-top: -15px;
+  margin-top: -10px;
   margin-bottom: 36px;
+  margin-left: 3px;
 }
 
 .main-footer-academy {
-  display: grid;
-  grid-template-columns:  auto auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 8px;
   width: 400px;
+  padding-right: 83px;
+  padding-top: 13px;
+  box-sizing: border-box;
+  outline: 2px solid rgba(255, 50, 200, 0.7);
+  outline-offset: -2px;
+}
+
+.main-footer-academy a {
+  margin-left: 9px;
 }
 
 /* //TODO: ====== Grid Catalog ====== */
