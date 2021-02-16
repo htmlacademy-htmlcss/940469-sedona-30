@@ -12,7 +12,6 @@
   </head>
   <body class="page-body container">
     <header class="main-header">
-      <!-- // TODO: Здесь потом будет flex-box с псевдоэлементом-->
       <nav class="main-navigation">
         <a href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
@@ -32,16 +31,16 @@
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul class="infrastructure">
-              <li>
-                <input type="checkbox" name="pool" id="pool" checked>
+              <li class="infrastructure-li">
+                <input class="hidden infrastructure-input" type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
+              <li class="infrastructure-li">
+                <input class="hidden infrastructure-input"  type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
               </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
+              <li class="infrastructure-li">
+                <input class="hidden infrastructure-input" type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-Fi</label>
               </li>
             </ul>
@@ -51,16 +50,16 @@
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul class="house-type">
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
+              <li class="house-type-li">
+                <input class="hidden house-type-input" type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
+              <li class="house-type-li">
+                <input class="hidden house-type-input" type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
-              <li>
-                <input type="checkbox" name="apartments" id="apartments" checked>
+              <li class="house-type-li">
+                <input class="hidden house-type-input" type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
             </ul>
@@ -70,14 +69,21 @@
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
             <p class="service-cost">
-              <label for="cost-from">от</label>
+              <label class="service-min-cost" for="cost-from">от</label>
               <input type="text" name="cost-from" id="cost-from" value="0">
-              <label for="cost-before">до</label>
+              <label class="service-max-cost" for="cost-before">до</label>
               <input type="text" name="cost-before" id="cost-before" value="3000">
             </p>
             <label>
-              <input type="range" name="cost"  id="cost" value="80">
-              <!-- Это потом, я так понимаю, нужно будет заменить на div, или на что-то еще-->
+              <div class="residence-range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+              </div>
             </label>
           </fieldset>
           <p class="residence-show-button">
@@ -95,8 +101,16 @@
           <li><a class="residence-sorting-link" href="#!"><span>По рейтингу</span></a></li>
         </ul>
         <ul class="residence-sorting-arrows">
-          <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по убыванию"><!-- // TODO: Этот логотип я потом вставлю в виде svg и стилизую--></a></li>
-          <li><a href="#!"><img src="img/icon-sort.svg" width="11" height="10" alt="Сортировка по возрастанию"><!-- // TODO: Этот логотип я потом вставлю в виде svg и стилизую--></a></li>
+          <li><a href="#!">
+            <svg class="sorting-arrows-one" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+            </svg>
+            </a></li>
+          <li><a href="#!">
+            <svg class="sorting-arrows-two" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+            </svg>
+            </a></li>
         </ul>
       </section>
       <section class="residence-choise">

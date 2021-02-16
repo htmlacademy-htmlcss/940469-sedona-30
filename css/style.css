@@ -366,7 +366,7 @@ display: none;
   border: var(--color-background) solid 2px;
   box-sizing: border-box;
   border-radius: 2px;
-  width: 137px;
+  width: 136px;
   height: 36px;
   color: var(--color-background);
   font-size: 14px;
@@ -1130,14 +1130,13 @@ p.hotel-selection-number {
 /* //TODO: ====== Grid Catalog ====== */
 
 .place-residence-form {
-  display: grid;
+  display: flex;
   min-height: 217px;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: flex-start;
   background-size: cover;
   align-items: center;
-  grid-template-columns: 1fr 1fr 3fr;
-  grid-gap: 46px;
   padding-left: 54px;
   padding-right: 60px;
   box-sizing: border-box;
@@ -1146,24 +1145,74 @@ p.hotel-selection-number {
 .infrastructure, .house-type {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 24px;
   outline: 2px solid rgba(100, 50, 200, 0.7);
   outline-offset: -2px;
   box-sizing: border-box;
 }
 
-.residence-form-one legend, .residence-form-two legend {
-  margin-bottom: 25px;
+.infrastructure {
+  margin-top: 19px;
+  margin-left: 42px;
+}
+
+.house-type {
+  margin-top: 19px;
+  margin-left: 131px;
+}
+
+.infrastructure-li label,
+.house-type-li label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+input.infrastructure-input:not(:checked)+label::after,
+input.house-type-input:not(:checked)+label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--color-background);
+  border-radius: 3px;
+}
+
+input.infrastructure-input:checked+label::after,
+input.house-type-input:checked+label::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icon-checkbox-on.svg);
+}
+
+.residence-form-one legend {
+  margin-left: 0px;
+  padding-top: 4px;
+  padding-left: 3px;
+}
+
+.residence-form-two legend {
+  margin-left: 87px;
+  margin-bottom: 3px;
+  padding-left: 1px;
 }
 
 .residence-form-three {
   display: grid;
-  justify-content: flex-end;
   align-items: center;
   outline: 2px solid rgba(0, 50, 200, 0.7);
   outline-offset: -2px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  margin-left: 320px;
+  width: 370px;
+  box-sizing: border-box;
 }
 
 .residence-form-three input[type="text"] {
@@ -1171,11 +1220,15 @@ p.hotel-selection-number {
 }
 
 .service-cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
-  width: 317px;
+  width: 316px;
   height: 36px;
+  margin-top: 5px;
   text-align: center;
 }
 
@@ -1183,15 +1236,98 @@ p.hotel-selection-number {
   text-align: left;
 }
 
-.residence-form-three input[type="range"] {
-  width: 317px;
+.residence-range-filter {
+  margin-top: -10px;
+}
+
+.range-controls {
+  height: 20px;
+  padding-top: 15px;
+  margin-bottom: -40px;
+  height: 41px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--color-background);
+  width: 255px;
+}
+
+.range-controls .bar {
+  height: 2px;
+  background-color: var(--color-background);
+  opacity: 0.3;
+  width: 316px;
+}
+
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 254px;
+}
+
+.service-cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.service-cost input {
+   font-family: inherit;
+   font-size: inherit;
+   margin-bottom: 1px;
+}
+
+.service-min-cost {
+  margin-left: 18px;
+}
+
+.service-max-cost {
+  margin-left: 95px;
+}
+
+.service-min-cost::after {
+  content: "";
+  position: absolute;
+  left: 158px;
+  top: 5px;
+  width: 2px;
+  height: 22px;
+  background-color: var(--color-background);
 }
 
 .residence-show-button {
   text-align: center;
+  margin-top: 25px;
+  margin-left: -8px;
 }
 
 /*-- --------------------------------------------------------- --*/
+
+.residence-results-find {
+  padding-left: 6px;
+}
+
+.residence-results-sorting {
+  padding-top: 1px;
+}
 
 .residence-results {
   margin: 29px auto;
@@ -1201,29 +1337,47 @@ p.hotel-selection-number {
   grid-template-columns: 1fr 1fr 2fr 4fr;
   align-items: flex-start;
   box-sizing: border-box;
-  outline: 2px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -2px;
+  outline: 1px solid rgba(0, 50, 200, 0.7);
+  outline-offset: -1px;
   grid-gap: 46px;
 }
 
 .residence-sorting {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  outline: 2px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -2px;
-  margin-left: -50px;
+  margin-left: -57px;
+}
+
+.residence-sorting li:not(:first-child) {
+  margin-left: 29px;
 }
 
 .residence-sorting-arrows {
-  display: grid;
+  display: flex;
   justify-content: flex-end;
-  padding-right: 79px;
+  padding-right: 75px;
+  padding-top: 5px;
   grid-template-columns: auto auto;
   align-items: flex-end;
   box-sizing: border-box;
-  grid-gap: 12px;
+  gap: 12px;
+}
+
+.sorting-arrows-one {
+  transform: rotate(180deg);
+}
+
+.sorting-arrows-one path {
+  fill: var(--color-catalog-sort);
+}
+
+.sorting-arrows-one:hover path{
+  fill: var(--color-header-text);
+}
+
+.sorting-arrows-one:active path{
+  fill: var(--color-welcome);
 }
 
 /*-- --------------------------------------------------------- --*/
