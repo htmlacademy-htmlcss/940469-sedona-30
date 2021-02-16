@@ -1052,10 +1052,6 @@ p.hotel-selection-number {
 }
 
 .main-footer {
-  opacity: 0.9;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
   background-color: var(--color-background);
   z-index: 200;
   outline: 2px solid rgba(255, 0, 0, 0.7);
@@ -1065,6 +1061,13 @@ p.hotel-selection-number {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+}
+
+.main-footer-main {
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
 }
 
 .footer-social {
@@ -1290,9 +1293,9 @@ input.house-type-input:checked+label::after {
 }
 
 .service-cost input {
-   font-family: inherit;
-   font-size: inherit;
-   margin-bottom: 1px;
+  font-family: inherit;
+  font-size: inherit;
+  margin-bottom: 1px;
 }
 
 .service-min-cost {
@@ -1383,7 +1386,7 @@ input.house-type-input:checked+label::after {
 /*-- --------------------------------------------------------- --*/
 
 .residence-choise {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
