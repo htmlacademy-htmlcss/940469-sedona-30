@@ -1295,6 +1295,14 @@ input.house-type-input:not(:checked)+label::after  {
   left: 254px;
 }
 
+.range-controls .toggle:hover,
+.range-controls .toggle:hover {
+  border: 10px solid #ffffff;
+  width: 5px;
+  height: 5px;
+  top: 3px
+}
+
 .service-cost {
   display: flex;
   justify-content: center;
