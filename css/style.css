@@ -1140,7 +1140,7 @@ p.hotel-selection-number {
 .place-residence-form {
   display: flex;
   min-height: 217px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   justify-content: flex-start;
   background-size: cover;
