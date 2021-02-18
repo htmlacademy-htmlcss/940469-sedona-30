@@ -771,7 +771,7 @@ p.main-footer-academy {
   padding-top: 2px;
 }
 
-.reason-one p:last-child, .reason-two p:last-child{
+.reason-one p:last-child, .reason-two p:last-child {
   max-width: 310px;
   margin-top: 6px;
   margin-bottom: 52px;
@@ -782,6 +782,9 @@ p.main-footer-academy {
   grid-row: 2;
   outline: 2px solid rgba(0, 0, 200, 0.7);
   outline-offset: -2px;
+}
+
+.advices-list {
   display: flex;
 }
 
@@ -809,7 +812,7 @@ p.main-footer-academy {
   min-height: 330px;
 }
 
-.advice-one h3,  .advice-two h3, .advice-three h3{
+.advice-one h3,  .advice-two h3, .advice-three h3 {
   margin-top:  160px;
 }
 
@@ -928,7 +931,6 @@ p.main-footer-academy {
   outline: 2px solid rgba(0, 0, 70, 0.7);
   outline-offset: -2px;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   width: 458px;
@@ -1092,6 +1094,7 @@ p.hotel-selection-number {
   outline: 2px solid rgba(255, 50, 200, 0.7);
   outline-offset: -2px;
   justify-content: center;
+  align-items: center;
   margin-right: 75px;
   margin-top: 20px;
   box-sizing: border-box;
@@ -1293,6 +1296,14 @@ input.house-type-input:not(:checked)+label::after  {
 
 .range-controls .toggle-max {
   left: 254px;
+}
+
+.range-controls .toggle:hover,
+.range-controls .toggle:hover {
+  border: 10px solid #ffffff;
+  width: 5px;
+  height: 5px;
+  top: 3px
 }
 
 .service-cost {
