@@ -269,6 +269,47 @@ a.current:active {
   width: 315px;
   height: 38px;
   box-sizing: border-box;
+  border: var(--color-search-background) solid 2px;
+}
+
+.hotel-selection-modal input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.hotel-selection-modal input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.hotel-selection-modal input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.hotel-selection-modal input:focus:-ms-input-placeholder {
+   color: transparent;
+}
+
+.hotel-selection-modal input::-webkit-input-placeholder {
+  color: var(--color-header-text);
+  opacity: 1;
+  padding-top: 3px;
+}
+
+.hotel-selection-modal input::-moz-placeholder {
+  color: var(--color-header-text);
+  opacity: 1;
+  padding-top: 3px;
+}
+
+.hotel-selection-modal input:-moz-placeholder {
+  color: var(--color-header-text);
+  opacity: 1;
+  padding-top: 3px;
+}
+
+.hotel-selection-modal input:-ms-input-placeholder {
+  color: var(--color-header-text);
+  opacity: 1;
+  padding-top: 3px;
 }
 
 .hotel-selection-modal input[type="number"] {
@@ -966,6 +1007,7 @@ p.main-footer-academy {
   padding-left: 14px;
   padding-top: 2px;
 }
+
 
 .hotel-selection-modal button[type="button"] {
   outline: 0;
