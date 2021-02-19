@@ -393,10 +393,6 @@ a.current:active {
   padding: 0;
 }
 
-/*.infrastructure input[type="checkbox"] {
-display: none;
-} */
-
 .service-cost {
   font-weight: normal;
   font-size: 14px;
@@ -1229,8 +1225,8 @@ p.hotel-selection-number {
   user-select: none;
 }
 
-input.infrastructure-input:not(:checked)+label::after,
-input.house-type-input:not(:checked)+label::after {
+input.infrastructure-input:not(:checked)+label::before,
+input.house-type-input:not(:checked)+label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -1241,8 +1237,34 @@ input.house-type-input:not(:checked)+label::after {
   border-radius: 3px;
 }
 
+input.infrastructure-input:not(:checked)+label::after,
+input.house-type-input:not(:checked)+label::after{
+  padding-left: 20px;
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
 input.infrastructure-input:checked+label::after,
-input.house-type-input:checked+label::after {
+input.house-type-input:checked+label::after{
+  padding-left: 20px;
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+}
+
+input.infrastructure-input:checked+label::before,
+input.house-type-input:checked+label::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -1252,8 +1274,8 @@ input.house-type-input:checked+label::after {
   background-image: url(../img/icon-checkbox-on.svg);
 }
 
-input.house-type-input:checked+label::after,
-input.house-type-input:not(:checked)+label::after  {
+input.house-type-input:checked+label::before,
+input.house-type-input:not(:checked)+label::before  {
   left: -42px;
 }
 
@@ -1445,11 +1467,11 @@ input.house-type-input:not(:checked)+label::after  {
   fill: var(--color-catalog-sort);
 }
 
-.sorting-arrows-one:hover path{
+.residence-sorting-a:hover path{
   fill: var(--color-header-text);
 }
 
-.sorting-arrows-one:active path{
+.residence-sorting-a:active path{
   fill: var(--color-welcome);
 }
 
