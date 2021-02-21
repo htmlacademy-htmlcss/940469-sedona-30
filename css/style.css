@@ -149,8 +149,6 @@ li {
 }
 
 .site-navigation {
-  outline: 2px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -2px;
   display: flex;
   align-items: center;
   max-width: 1200px;
@@ -160,8 +158,6 @@ li {
 
 .site-navigation li {
   width: 25%;
-  outline: 2px solid rgba(0, 200, 255, 0.7);
-  outline-offset: -2px;
 }
 
 .site-navigation:first-child,
@@ -220,8 +216,6 @@ a.current:active {
   max-width: 470px;
   min-height: 80px;
   margin: 43px auto 16px;
-  outline: 2px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -2px;
 }
 
 .welcom-sedona {
@@ -257,8 +251,6 @@ a.current:active {
 
 .reasons-list {
   display: grid;
-  outline: 2px solid rgba(0, 200, 200, 0.7);
-  outline-offset: -2px;
   margin: 0 auto;
   max-width: 1200px;
   margin: 0;
@@ -311,8 +303,6 @@ a.current:active {
 
 .reason-one-li {
   display: grid;
-  outline: 2px solid rgba(0, 200, 0, 0.7);
-  outline-offset: -2px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 256px 57%;
 }
@@ -331,8 +321,6 @@ a.current:active {
 
 .reason-two-li {
   display: grid;
-  outline: 2px solid rgba(200, 250, 250, 0.7);
-  outline-offset: -2px;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 256px;
 }
@@ -354,8 +342,6 @@ a.current:active {
 .advices {
   grid-column: 1/4;
   grid-row: 2;
-  outline: 2px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -2px;
 }
 
 .advices-list {
@@ -486,8 +472,6 @@ a.current:active {
   font-size: 30px;
   line-height: 24px;
   text-align: center;
-  outline: 2px solid rgba(0, 200, 0, 0.7);
-  outline-offset: -2px;
   margin-top: 58px;
   margin-bottom: 32px;
   max-width: 470px;
@@ -501,8 +485,6 @@ a.current:active {
 .date-selection {
   line-height: 24px;
   text-align: center;
-  outline: 2px solid rgba(0, 200, 0, 0.7);
-  outline-offset: -2px;
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
@@ -563,8 +545,6 @@ a.current:active {
   line-height: 26px;
   font-weight: bold;
   color: var(--color-header-text);
-  outline: 2px solid rgba(0, 0, 70, 0.7);
-  outline-offset: -2px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -713,8 +693,6 @@ a.current:active {
 }
 
 p.hotel-selection-number {
-  outline: 2px solid rgba(0, 200, 200, 0.7);
-  outline-offset: -2px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -845,8 +823,6 @@ p.hotel-selection-number {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 24px;
-  outline: 2px solid rgba(100, 50, 200, 0.7);
-  outline-offset: -2px;
   box-sizing: border-box;
 }
 
@@ -970,8 +946,6 @@ input.house-type-input:not(:checked)+label::before  {
 .residence-form-three {
   display: grid;
   align-items: center;
-  outline: 2px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -2px;
   padding-top: 10px;
   margin-left: 320px;
   width: 340px;
@@ -1103,8 +1077,6 @@ input.house-type-input:not(:checked)+label::before  {
   grid-template-columns: 1fr 1fr 2fr 4fr;
   align-items: flex-start;
   box-sizing: border-box;
-  outline: 1px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -1px;
   grid-gap: 46px;
 }
 
@@ -1136,9 +1108,6 @@ input.house-type-input:not(:checked)+label::before  {
   align-items: center;
   padding-left: 0px;
   margin-left: -6px;
-  outline: 1px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -1px;
-
 }
 
 .residence-sorting li:not(:first-child) {
@@ -1156,8 +1125,6 @@ input.house-type-input:not(:checked)+label::before  {
   align-items: flex-start;
   box-sizing: border-box;
   gap: 12px;
-   outline: 1px solid rgba(0, 50, 200, 0.7);
-  outline-offset: -1px;
 }
 
 .residence-sorting a {
@@ -1368,8 +1335,6 @@ p.choose-residence-reserve:active span {
 .choose-residence-buttons {
   display: flex;
   flex-wrap: wrap;
-  outline: 2px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -2px;
   box-sizing: border-box;
   justify-content: flex-start;
   margin-top: 2px;
@@ -1382,8 +1347,6 @@ p.choose-residence-reserve:active span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  outline: 2px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -2px;
   align-items: flex-end;
   text-align: right;
   flex-wrap: wrap;
@@ -1411,8 +1374,6 @@ p.choose-residence-reserve:active span {
 
 .choose-residence-spans {
   display: flex;
-  outline: 2px solid rgba(0, 0, 200, 0.7);
-  outline-offset: -2px;
   flex-wrap: wrap;
   padding-top: 4px;
   padding-left: 3px;
@@ -1466,8 +1427,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  outline: 2px solid rgba(255, 50, 50, 0.7);
-  outline-offset: -2px;
   text-align: center;
   width: 400px;
   box-sizing: border-box;
@@ -1477,8 +1436,6 @@ footer {
 
 .our-social-networks {
   display: flex;
-  outline: 2px solid rgba(255, 50, 200, 0.7);
-  outline-offset: -2px;
   justify-content: center;
   align-items: center;
   margin-right: 31px;
@@ -1559,8 +1516,6 @@ p.main-footer-academy {
   width: 400px;
   padding-right: 73px;
   box-sizing: border-box;
-  outline: 2px solid rgba(255, 50, 200, 0.7);
-  outline-offset: -2px;
 }
 
 .main-footer-academy a:hover path{
