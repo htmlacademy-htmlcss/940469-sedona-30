@@ -1361,7 +1361,6 @@ p.choose-residence-reserve:active span {
   padding-bottom: 3px;
   padding-top: 3px;
   background-color: var(--color-search-background);
-  padding-top: 3px;
   box-sizing: border-box;
   margin-right: -2px;
 }
