@@ -13,7 +13,6 @@
   <body class="page-body">
     <div class="container">
       <header class="main-header">
-        <!-- // TODO: Здесь потом будет flex-box с псевдоэлементом-->
         <nav class="main-navigation">
           <img src="img/logo.svg" width="138"  height="70" alt="Логотип города Седона">
           <ul class="site-navigation">
@@ -45,17 +44,14 @@
             <section class="advices">
               <ul class="advices-list">
                 <li class="advice-one">
-                  <!-- // TODO: Здесь будет css icon-motel.svg, или будет просто добавлено svg в html-->
                   <h3>Жильё</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="advice-two">
-                  <!-- // TODO: Здесь будет css icon-motel.svg, или будет просто добавлено svg в html-->
                   <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="advice-three">
-                  <!-- // TODO: Здесь будет css icon-motel.svg, или будет просто добавлено svg в html-->
                   <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -106,7 +102,7 @@
             <button class="hotel-search" type="button" name="hotels"><span>Поиск гостиницы в Седоне</span></button>
           </div>
           <!-- // TODO: Форма выбора гостиницы, если нажать на кнопку-->
-          <form class="hotel-selection-modal" action="#!" method="post">
+          <form class="hotel-selection-modal" action="#!" method="get">
             <p class="hotel-modal-first">
               <label for="date-in">Дата заезда:</label>
               <input type="text" name="date-in" id="date-in" placeholder="24 апреля 2017">
@@ -156,26 +152,26 @@
         </section>
         <section class="location">
           <h2 class="hidden">Местоположение Седоны</h2>
-          <div class="map"><a href="https://yandex.ru/maps/110669/sedona/?ll=-111.760186%2C34.869497&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D-111.760%252C34.870%26spn%3D0.030%252C0.029%26text%3DUnited%2520States%2520of%2520America%252C%2520Arizona%252C%2520Coconino%2520County%252C%2520Sedona&utm_medium=mapframe&utm_source=maps&z=7" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/-/CCUMnZgK1B" width="1200" height="580" frameborder="0" allowfullscreen="true"></iframe>
+          <div class="map"><a href="https://yandex.ru/maps/110669/sedona/?ll=-111.760186%2C34.869497&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D-111.760%252C34.870%26spn%3D0.030%252C0.029%26text%3DUnited%2520States%2520of%2520America%252C%2520Arizona%252C%2520Coconino%2520County%252C%2520Sedona&utm_medium=mapframe&utm_source=maps&z=7" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/-/CCUMnZgK1B" width="1200" height="592" frameborder="0" allowfullscreen="true"></iframe>
           </div>
         </section>
       </main>
       <footer class="main-footer main-footer-main">
         <div class="main-footer-grid">
           <p>#visitSEDONA</p>
-          <p class="footer-tel">Тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
+          <p class="footer-tel">Тел: <a href="tel:+74956660166">+7(495) 666-01-66</a></p>
         </div>
         <section class="footer-social">
           <h2 class="hidden">Наши соцсети</h2>
           <ul class="our-social-networks">
             <li>
-              <a href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"></a>
+              <a class="social-networks-a" href="#!"><img src="img/icon-twitter.svg" width="17" height="17" alt="Мы в Twitter"></a>
             </li>
             <li>
-              <a href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"></a>
+              <a class="social-networks-a" href="#!"><img src="img/icon-facebook.svg" width="12" height="22" alt="Мы в Facebook"></a>
             </li>
             <li>
-              <a href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"></a>
+              <a class="social-networks-a" href="#!"><img src="img/icon-youtube.svg" width="20" height="16" alt="Мы на Youtube"></a>
             </li>
           </ul>
         </section>
