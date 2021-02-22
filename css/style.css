@@ -193,6 +193,11 @@ li {
   color: var(--color-welcome);
 }
 
+.site-navigation a:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
 .site-navigation a:active {
   color: var(--color-header-text);
   opacity: 0.3;
@@ -506,13 +511,17 @@ a.current:active {
   padding-right: 139px;
   padding-top: 30px;
   padding-bottom: 30px;
-  outline: 0;
   border: 0;
   max-width: 800px;
 }
 
 .hotel-search:hover {
   background-color: var(--color-main-buttons-hover);
+}
+
+.hotel-search:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
 }
 
 .hotel-search:active {
@@ -686,6 +695,11 @@ a.current:active {
   fill: var(--color-header-text);
 }
 
+.hotel-selection-modal button[type="button"]:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
 .hotel-selection-calendar:active path,
 .hotel-selection-minus:active .hotel-selection-calendar rect,
 .hotel-selection-minustwo:active .hotel-selection-calendar rect,
@@ -724,6 +738,11 @@ p.hotel-selection-number {
   background-color: var(--color-welcome-buttons-hover);
 }
 
+.selection-submit:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
 .selection-submit:active {
   background-color: var(--color-welcome-buttons-active);
 }
@@ -737,15 +756,17 @@ p.hotel-selection-number {
   margin-top: 2px;
 }
 
-.hotel-selection-number button.hotel-selection-minus{
+.hotel-selection-number button.hotel-selection-minus {
   margin-left: 40px;
   padding-right: 2px;
   padding-bottom: 10px;
+  z-index: 100;
 }
 
 .hotel-selection-number button.hotel-selection-minustwo {
   padding-left: 15px;
   padding-bottom: 10px;
+  z-index: 100;
 }
 
 .hotel-selection-number button.hotel-selection-plus {
@@ -1443,13 +1464,18 @@ footer {
   margin-top: 10px;
   box-sizing: border-box;
   flex-wrap: wrap;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .footer-tel {
   margin-top: -10px;
   margin-bottom: 36px;
   margin-left: 3px;
+}
+
+.footer-tel a:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
 }
 
 .our-social-networks li {
@@ -1502,6 +1528,12 @@ footer {
   margin-left: 9px;
 }
 
+.social-networks-a:focus {
+  cursor: pointer;
+  outline: 0;
+  outline: 2px dotted var(--color-welcome);
+}
+
 .social-networks-a img:active {
   opacity: 0.3;
 }
@@ -1521,6 +1553,11 @@ p.main-footer-academy {
 
 .main-footer-academy a:hover path{
   fill: var(--color-welcome);
+}
+
+.main-footer-academy a:focus{
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
 }
 
 .main-footer-academy a:active path{
