@@ -27,7 +27,7 @@
       </header>
       <main class="main-container main-main">
         <h1 class="hidden">Выбор места проживания в городе Седона</h1>
-        <form class="place-residence-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="place-residence-form" action="https://echo.htmlacademy.ru/" method="get" target="_blank">
           <div class="residence-form-one">
             <fieldset>
               <legend>Инфраструктура:</legend>
@@ -81,14 +81,14 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок для установки минимального значения стоимости"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок для установки максимального значения стоимости"></div>
                   </div>
                 </div>
               </label>
             </fieldset>
             <p class="residence-show-button">
-              <button class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
+              <button aria-label="Показать. Для отправки формы" class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
             </p>
           </div>
         </form>
