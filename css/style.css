@@ -808,6 +808,11 @@ p.hotel-selection-number {
 
 /* //TODO: ====== Catalog ====== */
 
+.logo:focus img {
+  cursor: pointer;
+  outline: 1px dotted var(--color-welcome);
+}
+
 /* //TODO: === Form Place of Residence in Sedona === */
 
 .place-residence-form {
@@ -915,6 +920,12 @@ input.house-type-input:not(:checked)+label::before  {
   left: -42px;
 }
 
+input.house-type-input:focus + label::before,
+input.infrastructure-input:focus + label::before {
+  cursor: pointer;
+  outline: 4px dotted var(--color-welcome);
+}
+
 .house-type {
   margin-top: 19px;
   margin-left: 133px;
@@ -976,6 +987,11 @@ input.house-type-input:not(:checked)+label::before  {
 
 .residence-form-three input[type="text"] {
   width: 30px;
+}
+
+.residence-form-three input[type="text"]:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
 }
 
 .service-cost {
@@ -1049,6 +1065,12 @@ input.house-type-input:not(:checked)+label::before  {
   top: 3px
 }
 
+.range-controls .toggle:focus,
+.range-controls .toggle:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
 .service-cost {
   display: flex;
   justify-content: center;
@@ -1087,6 +1109,11 @@ input.house-type-input:not(:checked)+label::before  {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.residence-show:focus {
+  cursor: pointer;
+  outline: 4px dotted var(--color-welcome);
 }
 
 /* //TODO: === Results of Form Place of Residence in Sedona === */
@@ -1168,6 +1195,11 @@ input.house-type-input:not(:checked)+label::before  {
   color: var(--color-welcome);
 }
 
+.residence-sorting-link:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
 .residence-sorting-link:active span,
 .residence-sorting-link:active {
   opacity: 1;
@@ -1183,6 +1215,12 @@ a.residence-sorting-active:active {
   color: var(--color-welcome);
   opacity: 1;
   border-bottom: 0;
+  cursor:text;
+}
+
+a.residence-sorting-active:focus {
+  cursor:text;
+  outline: 0;
 }
 
 .sorting-arrows-one {
@@ -1195,6 +1233,16 @@ a.residence-sorting-active:active {
 
 .residence-sorting-a:hover path{
   fill: var(--color-header-text);
+}
+
+.residence-sorting-not:focus {
+  cursor: text;
+  outline: 0;
+}
+
+.residence-sorting-a:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
 }
 
 .residence-sorting-a:active path{
@@ -1235,7 +1283,8 @@ a.residence-sorting-active:active {
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 3px;
-  margin-top: 11px;
+  margin-top: 5px;
+  padding-top: 1px;
   padding-left: 5px;
 }
 
@@ -1245,6 +1294,11 @@ a.residence-sorting-active:active {
 
 .choose-residence-name a:hover {
   color: var(--color-welcome);
+}
+
+.choose-residence-name a:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
 }
 
 .choose-residence-name a:active {
@@ -1268,7 +1322,6 @@ a.residence-sorting-active:active {
   min-height: 150px;
   display: grid;
   grid-template-columns:  1fr 3fr 3fr;
-
   padding-right: 72px;
   padding-left: 73px;
   align-items: center;
@@ -1279,35 +1332,48 @@ a.residence-sorting-active:active {
   padding-left: 10px;
 }
 
+.choose-residence-details {
+  margin-top: 18px;
+}
+
 .choose-residence-more {
   font-weight: bold;
   color: var(--color-background);
 }
 
-.choose-residence-details span {
+.choose-residence-more span {
   color: var(--color-background);
 }
 
-p.choose-residence-details {
+.choose-residence-more {
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: var(--color-welcome);
   text-align: center;
   box-sizing: border-box;
 }
 
-p.choose-residence-details:hover {
+.choose-residence-more:hover {
   background-color: var(--color-welcome-buttons-hover);
 }
 
-p.choose-residence-details:active {
+.choose-residence-more:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
+.choose-residence-more:active {
   background-color: var(--color-welcome-buttons-active);
 }
 
-p.choose-residence-details:active span {
+.choose-residence-more:active span {
   opacity: 0.3;
+}
+
+.choose-residence-reserve {
+    margin-top: 17px;
 }
 
 .choose-residence-reserving {
@@ -1315,43 +1381,49 @@ p.choose-residence-details:active span {
   color: var(--color-background);
 }
 
-.choose-residence-reserve span {
+.choose-residence-reserving span {
   color: var(--color-background);
 }
 
-p.choose-residence-reserve {
+.choose-residence-reserving {
   padding-left: 18px;
   padding-right: 18px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: var(--color-main-buttons);
   text-align: center;
-  padding-top: 3px;
   box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle
 }
 
-p.choose-residence-reserve:hover {
+.choose-residence-reserving:hover {
   background-color: var(--color-main-buttons-hover);
 }
 
-p.choose-residence-reserve:active {
+.choose-residence-reserving:focus {
+  cursor: pointer;
+  outline: 2px dotted var(--color-welcome);
+}
+
+.choose-residence-reserving:active {
   background-color: var(--color-main-buttons-active);
 }
 
-p.choose-residence-reserve:active span {
+.choose-residence-reserving:active span {
   opacity: 0.3;
 }
 
 .choose-residence-rating {
   text-align: center;
   color: var(--color-catalog-rating);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 18px;
+  padding-right: 10px;
   padding-bottom: 3px;
   padding-top: 3px;
   background-color: var(--color-search-background);
   box-sizing: border-box;
-  margin-right: -2px;
+  margin-right: 2px;
 }
 
 .choose-residence-buttons {
@@ -1359,8 +1431,6 @@ p.choose-residence-reserve:active span {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: flex-start;
-  margin-top: 2px;
-  margin-bottom: 2px;
   gap: 5px;
   padding-left: 5px;
 }
@@ -1397,7 +1467,8 @@ p.choose-residence-reserve:active span {
 .choose-residence-spans {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 4px;
+  margin-top: 7px;
+  padding-top: 1px;
   padding-left: 3px;
 }
 
