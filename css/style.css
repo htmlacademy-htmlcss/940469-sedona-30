@@ -521,7 +521,7 @@ a.current:active {
 
 .hotel-search:focus {
   cursor: pointer;
-  outline: 2px dotted var(--color-welcome);
+  outline: 3px dotted var(--color-welcome);
 }
 
 .hotel-search:active {
