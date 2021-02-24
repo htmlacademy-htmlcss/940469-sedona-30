@@ -688,7 +688,7 @@ a.current:active {
   margin-left: -3px;
 }
 
-.hotel-selection-calendar:hover path,
+.calendar-button:hover .hotel-selection-calendar path,
 .hotel-selection-minus:hover .hotel-selection-calendar rect,
 .hotel-selection-minustwo:hover .hotel-selection-calendar rect,
 .hotel-selection-plus:hover .hotel-selection-calendar path {
@@ -700,7 +700,7 @@ a.current:active {
   outline: 2px dotted var(--color-welcome);
 }
 
-.hotel-selection-calendar:active path,
+.calendar-button:active .hotel-selection-calendar path,
 .hotel-selection-minus:active .hotel-selection-calendar rect,
 .hotel-selection-minustwo:active .hotel-selection-calendar rect,
 .hotel-selection-plus:active .hotel-selection-calendar path {
@@ -1501,7 +1501,8 @@ footer {
   z-index: 200;
 }
 
-.main-footer p, .main-footer-grid {
+.main-footer p,
+.main-footer-grid {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -1549,15 +1550,16 @@ footer {
   outline: 2px dotted var(--color-welcome);
 }
 
-.our-social-networks li {
+.our-social-networks a {
+  display: inline-block;
   background-color: var(--color-welcome);
   text-align: center;
   margin-right: 6px;
   margin-bottom: 6px;
   margin-top: 6px;
   box-sizing: border-box;
-  width: 46px;
-  height: 48px;
+  max-width: 46px;
+  max-height: 48px;
 }
 
 .our-social-networks img[src*="twitter"] {
@@ -1587,11 +1589,11 @@ footer {
   object-fit: contain;
 }
 
-.our-social-networks li:hover {
+.social-networks-a:hover {
   background-color: var(--color-welcome-buttons-hover);
 }
 
-.our-social-networks li:active {
+.social-networks-a:active {
   background-color: var(--color-welcome-buttons-active);
 }
 
@@ -1605,7 +1607,7 @@ footer {
   outline: 2px dotted var(--color-welcome);
 }
 
-.social-networks-a img:active {
+.social-networks-a:active img {
   opacity: 0.3;
 }
 
