@@ -1647,7 +1647,35 @@ footer.main-footer-catalog {
 }
 
 .hotel-form-animate {
+  -webkit-animation: bounce 1s;
   animation: bounce 1s;
+}
+
+.form-error {
+  -webkit-animation: shake 2s;
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX();
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 @keyframes bounce {
@@ -1666,3 +1694,4 @@ footer.main-footer-catalog {
   100% {
     transform: translateY(0);
   }
+

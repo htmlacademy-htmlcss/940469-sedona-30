@@ -1,18 +1,25 @@
 const formLink = document.querySelector(".hotel-search");
 const formPopup = document.querySelector(".hotel-selection-modal");
 let formIn = formPopup.querySelector(".hotel-modal-in");
-let formOut = formPopup.querySelector(".hotel-modal-out")
+let formOut = formPopup.querySelector(".hotel-modal-out");
+const formSubmit = formPopup.querySelector(".selection-submit");
+let count = 0;
 
 formLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   formPopup.classList.toggle("hotel-form-show");
   formPopup.classList.toggle("hotel-form-animate");
+  formPopup.classList.remove("form-error");
   formIn.focus();
 });
 
-formPopup.addEventListener("click", function (evt) {
+formSubmit.addEventListener("click", function (evt) {
   if (!formIn.value || !formOut.value) {
     evt.preventDefault();
-    alert("Не заполнены обязательные поля дата заезда и дата выезда.");
+    if(count >= 1) {
+      alert("Поля формы дата заезда и выезда обязательны для заполнения!");
+    }
+    formPopup.classList.add("form-error");
+    count++;
   }
 });
