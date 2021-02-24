@@ -1,8 +1,10 @@
 const formLink = document.querySelector(".hotel-search");
 const formPopup = document.querySelector(".hotel-selection-modal");
-let formIn = formPopup.querySelector(".hotel-modal-in");
-let formOut = formPopup.querySelector(".hotel-modal-out");
+const formIn = formPopup.querySelector(".hotel-modal-in");
+const formOut = formPopup.querySelector(".hotel-modal-out");
 const formSubmit = formPopup.querySelector(".selection-submit");
+let isStorageSupport = true;
+let storage = "";
 let count = 0;
 
 formLink.addEventListener("click", function (evt) {
@@ -23,3 +25,4 @@ formSubmit.addEventListener("click", function (evt) {
     count++;
   }
 });
+
