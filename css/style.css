@@ -1373,7 +1373,7 @@ a.residence-sorting-active:focus {
 }
 
 .choose-residence-reserve {
-    margin-top: 17px;
+  margin-top: 17px;
 }
 
 .choose-residence-reserving {
@@ -1639,3 +1639,30 @@ footer.main-footer-catalog {
   position: absolute;
   box-shadow: 0 13px 15px 0px var(--color-for-shadow);
 }
+
+/* //TODO: ===== Forms & JS ===== */
+
+.hotel-form-show {
+  display: none;
+}
+
+.hotel-form-animate {
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  70% {
+    transform: translateY(70px);
+  }
+
+  90% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
