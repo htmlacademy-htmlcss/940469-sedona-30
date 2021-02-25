@@ -1073,7 +1073,7 @@ input.infrastructure-input:checked:disabled+label::before,
 input.house-type-input:checked:disabled+label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -42px;
   top: 0;
   width: 23px;
   height: 23px;
