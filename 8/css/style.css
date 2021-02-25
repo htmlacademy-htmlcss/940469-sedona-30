@@ -213,8 +213,8 @@ a.current:active {
 /* // TODO: ====== Index ====== */
 
 .welcom-image {
-  width: 456px;
-  height: 350px;
+  width: 457px;
+  height: 351px;
   object-fit: contain;
 }
 
@@ -382,7 +382,7 @@ a.current:active {
 .advice-three {
   background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
-  background-position: 162px 60px;
+  background-position: 169px 55px;
   width: 400px;
   min-height: 330px;
 }
@@ -688,7 +688,7 @@ a.current:active {
   margin-left: -3px;
 }
 
-.hotel-selection-calendar:hover path,
+.calendar-button:hover .hotel-selection-calendar path,
 .hotel-selection-minus:hover .hotel-selection-calendar rect,
 .hotel-selection-minustwo:hover .hotel-selection-calendar rect,
 .hotel-selection-plus:hover .hotel-selection-calendar path {
@@ -700,7 +700,7 @@ a.current:active {
   outline: 2px dotted var(--color-welcome);
 }
 
-.hotel-selection-calendar:active path,
+.calendar-button:active .hotel-selection-calendar path,
 .hotel-selection-minus:active .hotel-selection-calendar rect,
 .hotel-selection-minustwo:active .hotel-selection-calendar rect,
 .hotel-selection-plus:active .hotel-selection-calendar path {
@@ -804,6 +804,7 @@ p.hotel-selection-number {
 .map iframe{
   max-width: 1200px;
   max-height: 592px;
+  border: 0;
 }
 
 /* //TODO: ====== Catalog ====== */
@@ -878,6 +879,18 @@ input.house-type-input:not(:checked)+label::before {
   border-radius: 3px;
 }
 
+input.infrastructure-input:not(:checked):disabled+label::before,
+input.house-type-input:not(:checked):disabled+label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--color-catalog-checkbox-disabled);
+  border-radius: 3px;
+}
+
 input.infrastructure-input:not(:checked)+label::after,
 input.house-type-input:not(:checked)+label::after{
   padding-left: 20px;
@@ -913,6 +926,17 @@ input.house-type-input:checked+label::before {
   width: 23px;
   height: 23px;
   background-image: url(../img/icon-checkbox-on.svg);
+}
+
+input.infrastructure-input:checked:disabled+label::before,
+input.house-type-input:checked:disabled+label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icon-checkbox-disabled.svg);
 }
 
 input.house-type-input:checked+label::before,
@@ -1036,7 +1060,8 @@ input.infrastructure-input:focus + label::before {
   width: 316px;
 }
 
-.range-controls .toggle {
+.toggle-min::before {
+  content: "";
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1049,24 +1074,36 @@ input.infrastructure-input:focus + label::before {
   cursor: pointer;
 }
 
-.range-controls .toggle-min {
-  left: 0px;
-}
-
-.range-controls .toggle-max {
-  left: 252px;
-}
-
-.range-controls .toggle:hover,
-.range-controls .toggle:hover {
+.toggle-min:hover::before {
   border: 10px solid #ffffff;
   width: 5px;
   height: 5px;
-  top: 3px
+  top: 3px;
 }
 
-.range-controls .toggle:focus,
-.range-controls .toggle:focus {
+.toggle-max::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 252px;
+  cursor: pointer;
+}
+
+.toggle-max:hover::before {
+  border: 10px solid #ffffff;
+  width: 5px;
+  height: 5px;
+  top: 3px;
+}
+
+.toggle-max:focus::before,
+.toggle-min:focus::before {
   cursor: pointer;
   outline: 2px dotted var(--color-welcome);
 }
@@ -1501,7 +1538,8 @@ footer {
   z-index: 200;
 }
 
-.main-footer p, .main-footer-grid {
+.main-footer p,
+.main-footer-grid {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -1549,15 +1587,17 @@ footer {
   outline: 2px dotted var(--color-welcome);
 }
 
-.our-social-networks li {
+.our-social-networks a {
+  display: inline-block;
   background-color: var(--color-welcome);
   text-align: center;
   margin-right: 6px;
   margin-bottom: 6px;
   margin-top: 6px;
   box-sizing: border-box;
-  width: 46px;
-  height: 48px;
+  max-width: 46px;
+  max-height: 48px;
+  vertical-align: middle;
 }
 
 .our-social-networks img[src*="twitter"] {
@@ -1587,11 +1627,11 @@ footer {
   object-fit: contain;
 }
 
-.our-social-networks li:hover {
+.social-networks-a:hover {
   background-color: var(--color-welcome-buttons-hover);
 }
 
-.our-social-networks li:active {
+.social-networks-a:active {
   background-color: var(--color-welcome-buttons-active);
 }
 
@@ -1605,7 +1645,7 @@ footer {
   outline: 2px dotted var(--color-welcome);
 }
 
-.social-networks-a img:active {
+.social-networks-a:active img {
   opacity: 0.3;
 }
 
