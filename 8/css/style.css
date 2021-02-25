@@ -689,7 +689,14 @@ a.current:active {
 }
 
 .calendar-button {
-  background-color: (--color-search-background);
+  background-color: var(--color-search-background);
+}
+
+.hotel-selection-minus,
+.hotel-selection-plusone,
+.hotel-selection-minustwo,
+.hotel-selection-plustwo {
+   background-color: var(--color-search-background);
 }
 
 .calendar-button:hover .hotel-selection-calendar path,
@@ -1472,7 +1479,7 @@ a.residence-sorting-active:focus {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: flex-start;
-  gap: 5px;
+  grid-gap: 5px;
   padding-left: 5px;
 }
 
