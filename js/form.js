@@ -1,3 +1,4 @@
+const details = document.querySelector('details');
 const formLink = document.querySelector(".hotel-search");
 const formPopup = document.querySelector(".hotel-selection-modal");
 const formIn = formPopup.querySelector(".hotel-modal-in");
@@ -22,6 +23,8 @@ let count = 0;
 
 let countChildren;
 let countAdults;
+
+formPopup.classList.add("hotel-form-show");
 
 try {
   storageAdult = localStorage.getItem("adult");

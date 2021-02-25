@@ -213,8 +213,8 @@ a.current:active {
 /* // TODO: ====== Index ====== */
 
 .welcom-image {
-  width: 456px;
-  height: 350px;
+  width: 457px;
+  height: 351px;
   object-fit: contain;
 }
 
@@ -382,7 +382,7 @@ a.current:active {
 .advice-three {
   background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
-  background-position: 162px 60px;
+  background-position: 169px 55px;
   width: 400px;
   min-height: 330px;
 }
@@ -804,6 +804,7 @@ p.hotel-selection-number {
 .map iframe{
   max-width: 1200px;
   max-height: 592px;
+  border: 0;
 }
 
 /* //TODO: ====== Catalog ====== */
@@ -1560,6 +1561,7 @@ footer {
   box-sizing: border-box;
   max-width: 46px;
   max-height: 48px;
+  vertical-align: middle;
 }
 
 .our-social-networks img[src*="twitter"] {
