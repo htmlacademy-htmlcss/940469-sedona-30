@@ -688,6 +688,10 @@ a.current:active {
   margin-left: -3px;
 }
 
+.calendar-button {
+  background-color: (--color-search-background);
+}
+
 .calendar-button:hover .hotel-selection-calendar path,
 .hotel-selection-minus:hover .hotel-selection-calendar rect,
 .hotel-selection-minustwo:hover .hotel-selection-calendar rect,
