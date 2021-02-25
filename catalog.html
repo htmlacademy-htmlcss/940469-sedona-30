@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Гостиницы | Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/180.png">
@@ -75,15 +75,15 @@
                 <label for="cost-before" class="service-max-cost">до</label>
                 <input type="text" name="cost-before" id="cost-before" value="3000">
               </p>
-                <div class="residence-range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок для установки минимального значения стоимости"></div>
-                    <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок для установки максимального значения стоимости"></div>
+              <div class="residence-range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
+                  <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок для установки минимального значения стоимости"></div>
+                  <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок для установки максимального значения стоимости"></div>
                 </div>
+              </div>
             </fieldset>
             <p class="residence-show-button">
               <button aria-label="Кнопка показать. Для отправки формы" class="residence-show" type="submit" name="select-home" id="select-home">Показать</button>
@@ -228,5 +228,6 @@
         </p>
       </footer>
     </div>
+    <script src="js/form.min.js"></script>
   </body>
 </html>
