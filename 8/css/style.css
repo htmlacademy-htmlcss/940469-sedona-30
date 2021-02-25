@@ -1479,8 +1479,11 @@ a.residence-sorting-active:focus {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: flex-start;
-  grid-gap: 5px;
   padding-left: 5px;
+}
+
+.choose-residence-buttons p {
+  margin-right: 5px;
 }
 
 .choose-residence-rate {
