@@ -879,6 +879,18 @@ input.house-type-input:not(:checked)+label::before {
   border-radius: 3px;
 }
 
+input.infrastructure-input:not(:checked):disabled+label::before,
+input.house-type-input:not(:checked):disabled+label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid var(--color-catalog-checkbox-disabled);
+  border-radius: 3px;
+}
+
 input.infrastructure-input:not(:checked)+label::after,
 input.house-type-input:not(:checked)+label::after{
   padding-left: 20px;
@@ -914,6 +926,17 @@ input.house-type-input:checked+label::before {
   width: 23px;
   height: 23px;
   background-image: url(../img/icon-checkbox-on.svg);
+}
+
+input.infrastructure-input:checked:disabled+label::before,
+input.house-type-input:checked:disabled+label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/icon-checkbox-disabled.svg);
 }
 
 input.house-type-input:checked+label::before,
@@ -1037,7 +1060,8 @@ input.infrastructure-input:focus + label::before {
   width: 316px;
 }
 
-.range-controls .toggle {
+.toggle-min::before {
+  content: "";
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1050,24 +1074,36 @@ input.infrastructure-input:focus + label::before {
   cursor: pointer;
 }
 
-.range-controls .toggle-min {
-  left: 0px;
-}
-
-.range-controls .toggle-max {
-  left: 252px;
-}
-
-.range-controls .toggle:hover,
-.range-controls .toggle:hover {
+.toggle-min:hover::before {
   border: 10px solid #ffffff;
   width: 5px;
   height: 5px;
-  top: 3px
+  top: 3px;
 }
 
-.range-controls .toggle:focus,
-.range-controls .toggle:focus {
+.toggle-max::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 252px;
+  cursor: pointer;
+}
+
+.toggle-max:hover::before {
+  border: 10px solid #ffffff;
+  width: 5px;
+  height: 5px;
+  top: 3px;
+}
+
+.toggle-max:focus::before,
+.toggle-min:focus::before {
   cursor: pointer;
   outline: 2px dotted var(--color-welcome);
 }
