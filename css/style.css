@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans.woff2") format("woff2"),
-    url("../fonts/PTSans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
-    url("../fonts/PTSans-Bold.woff") format("woff");
+  src: url("../fonts/ptsans-bold.woff2") format("woff2"),
+    url("../fonts/ptsans-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -1215,7 +1215,7 @@ input.infrastructure-input:focus + label::before {
 }
 
 .toggle-min::before {
-  content: "";
+  content:"";
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1317,7 +1317,6 @@ input.infrastructure-input:focus + label::before {
 
 .residence-results {
   margin: 29px auto;
-  padding-left: 65px;
   max-width: 1200px;
   display: -ms-grid;
   display: grid;
@@ -1329,6 +1328,7 @@ input.infrastructure-input:focus + label::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   grid-gap: 46px;
+  padding-left: 72px;
 }
 
 .residence-results-find {
@@ -1336,7 +1336,8 @@ input.infrastructure-input:focus + label::before {
   font-size: 21px;
   line-height: 26px;
   width: 117px;
-  padding-left: 7px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .residence-results-sorting {
@@ -1357,7 +1358,7 @@ input.infrastructure-input:focus + label::before {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 700px;
+  width: 650px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1366,6 +1367,8 @@ input.infrastructure-input:focus + label::before {
   align-items: center;
   padding-left: 0px;
   margin-left: -6px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .residence-sorting li:not(:first-child) {
@@ -1379,9 +1382,8 @@ input.infrastructure-input:focus + label::before {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-left: -5px;
-  width: 112px;
-  padding-right: 63px;
+  width: 150px;
+  padding-right: 58px;
   padding-top: 5px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1474,7 +1476,8 @@ a.residence-sorting-active:focus {
 /* //TODO: === Choose your Residence in Sedona === */
 
 .residence-choise {
-  width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
   padding: 0;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1488,7 +1491,6 @@ a.residence-sorting-active:focus {
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-bottom: 0;
 }
 
 .choose-residence-image {
@@ -1558,6 +1560,8 @@ a.residence-sorting-active:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .choose-residence-residence {
@@ -1696,9 +1700,12 @@ a.residence-sorting-active:focus {
   text-align: right;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.choose-residence-rate p:first-child {
+  margin-bottom: 29px;
 }
 
 .four-stars img {
@@ -1822,8 +1829,7 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+
 }
 
 .footer-tel {
@@ -1937,11 +1943,6 @@ p.main-footer-academy {
   fill: var(--color-academy-active);
 }
 
-footer.main-footer-catalog {
-  position: absolute;
-  -webkit-box-shadow: 0 13px 15px 0px var(--color-for-shadow);
-  box-shadow: 0 13px 15px 0px var(--color-for-shadow);
-}
 
 /* //TODO: ===== Forms & JS ===== */
 
