@@ -71,7 +71,7 @@ body {
   font-weight: 400;
   color: var(--color-paragraph-text);
   text-transform: uppercase;
-  background-color: var(--color-background);
+  background-color: var(--color-search-background);
   height: 100%;
 }
 
@@ -331,6 +331,7 @@ a.current:active {
   object-fit: contain;
   background-color: var(--color-welcome);
   text-align: center;
+  margin-bottom: -6px;
 }
 
 .reason-one p,
@@ -341,9 +342,12 @@ a.current:active {
 
 .reason-one p:last-child,
 .reason-two p:last-child {
+  margin-top: 3px;
+  margin-bottom: 48px;
+}
+
+.reason-last-p {
   max-width: 310px;
-  margin-top: 6px;
-  margin-bottom: 52px;
 }
 
 .reason-one-li {
@@ -351,47 +355,39 @@ a.current:active {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 256px 57%;
-  grid-template-rows: 256px 57%;
 }
 
 .reason-one-li > *:nth-child(1) {
-  -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
 
 .reason-one-li > *:nth-child(2) {
-  -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
 
 .reason-one-li > *:nth-child(3) {
-  -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
 
 .reason-one-li > *:nth-child(4) {
-  -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
 
 .reason-one-li > *:nth-child(5) {
-  -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
 
 .reason-one-li > *:nth-child(6) {
-  -ms-grid-row: 2;
   -ms-grid-column: 3;
 }
 
 .reason-one h2,
 .reason-two h2 {
   margin-top: 47px;
-  max-width: 150px;
+  margin-bottom: 5px;
+  max-width: 151px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
@@ -402,17 +398,13 @@ a.current:active {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
   grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 256px;
-  grid-template-rows: 256px;
 }
 
 .reason-two-li > *:nth-child(1) {
-  -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
 
 .reason-two-li > *:nth-child(2) {
-  -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
 
@@ -425,7 +417,6 @@ a.current:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  max-height: 256px;
   padding-top: 2px;
 }
 
@@ -969,9 +960,8 @@ p.hotel-selection-number {
   display: flex;
   min-height: 217px;
   width: 1200px;
-  margin-top: 0;
   margin-bottom: 0;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -980,6 +970,8 @@ p.hotel-selection-number {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 54px;
   padding-right: 60px;
   -webkit-box-sizing: border-box;
@@ -994,6 +986,10 @@ p.hotel-selection-number {
   font-size: 16px;
   line-height: 21px;
   color: var(--color-background);
+}
+
+.place-residence-form legend {
+  padding-top: 2px;
 }
 
 .infrastructure,
@@ -1013,7 +1009,7 @@ p.hotel-selection-number {
 }
 
 .infrastructure {
-  margin-top: 19px;
+  padding-top: 20px;
   margin-left: 44px;
 }
 
@@ -1112,17 +1108,15 @@ input.infrastructure-input:focus + label::before {
 }
 
 .house-type {
-  margin-top: 19px;
+  padding-top: 19px;
   margin-left: 133px;
-}
-
-.service-cost {
-  font-weight: normal;
-  font-size: 14px;
 }
 
 .service-cost input[type="text"] {
   background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 0;
   border: 0;
   outline: 0;
   color: var(--color-background);
@@ -1152,8 +1146,12 @@ input.infrastructure-input:focus + label::before {
 
 .residence-form-one legend {
   margin-left: 0px;
-  padding-top: 4px;
   padding-left: 3px;
+}
+
+.residence-form-one {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .residence-form-two legend {
@@ -1162,13 +1160,19 @@ input.infrastructure-input:focus + label::before {
   padding-left: 4px;
 }
 
+.residence-form-two {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 .residence-form-three {
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 10px;
   margin-left: 320px;
   width: 340px;
   -webkit-box-sizing: border-box;
@@ -1194,6 +1198,13 @@ input.infrastructure-input:focus + label::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 2px solid #FFFFFF;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1202,23 +1213,19 @@ input.infrastructure-input:focus + label::before {
   height: 36px;
   margin-top: 5px;
   text-align: center;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .residence-form-three legend {
   text-align: left;
-  margin-top: 3px;
-}
-
-.residence-range-filter {
-  margin-top: -10px;
+  padding-top: 9px;
 }
 
 .range-controls {
-  height: 20px;
-  padding-top: 15px;
-  margin-bottom: -40px;
-  height: 41px;
+  height: 12px;
   position: relative;
+  padding-top: 7px;
 }
 
 .range-controls .scale {
@@ -1236,69 +1243,50 @@ input.infrastructure-input:focus + label::before {
 
 .toggle-min::before {
   content:"";
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
   padding: 0;
   border: 8px solid var(--color-background);
   background-color: var(--color-catalog-range);
   border-radius: 50%;
   position: absolute;
-  top: 5px;
+  top: -1px;
   left: 0;
   cursor: pointer;
 }
 
 .toggle-min:hover::before {
-  border: 10px solid var(--color-background);
-  width: 5px;
-  height: 5px;
-  top: 3px;
+  border: 9px solid var(--color-background);
+  width: 4px;
+  height: 4px;
+  top: -3px;
 }
 
 .toggle-max::before {
   content: "";
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
   padding: 0;
   border: 8px solid var(--color-background);
   background-color: var(--color-catalog-range);
   border-radius: 50%;
   position: absolute;
-  top: 5px;
+  top: -1px;
   left: 252px;
   cursor: pointer;
 }
 
 .toggle-max:hover::before {
-  border: 10px solid var(--color-background);
-  width: 5px;
-  height: 5px;
-  top: 3px;
+  border: 9px solid var(--color-background);
+  width: 4px;
+  height: 4px;
+  top: -3px;
 }
 
 .toggle-max:focus::before,
 .toggle-min:focus::before {
   cursor: pointer;
   outline: 2px dotted var(--color-welcome);
-}
-
-.service-cost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.service-cost input {
-  font-family: inherit;
-  font-size: inherit;
-  margin-bottom: 1px;
 }
 
 .service-min-cost {
@@ -1321,9 +1309,9 @@ input.infrastructure-input:focus + label::before {
 
 .residence-show-button {
   text-align: center;
-  padding-top: 12px;
   padding-right: 10px;
   max-width: 300px;
+  padding-top: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1336,7 +1324,7 @@ input.infrastructure-input:focus + label::before {
 /* //TODO: === Results of Form Place of Residence in Sedona === */
 
 .residence-results {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   margin-top: 29px;
   margin-left: auto;
   margin-right: auto;
