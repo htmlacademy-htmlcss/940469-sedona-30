@@ -242,7 +242,7 @@ a.current:active {
 .welcom-sedona {
   min-height: 509px;
   background-color: var(--color-catalog-sort);
-  background-image: url(../img/shape-welcome.png), url(../img/background-sedona-welcome.jpg);
+  background-image: url("../img/shape-welcome.png"), url("../img/background-sedona-welcome.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center top;
   background-size: auto, cover;
@@ -448,7 +448,7 @@ a.current:active {
 }
 
 .advice-one {
-  background-image: url(../img/icon-motel.svg);
+  background-image: url("../img/icon-motel.svg");
   background-repeat: no-repeat;
   background-position: 162px 60px;
   width: 400px;
@@ -456,7 +456,7 @@ a.current:active {
 }
 
 .advice-two {
-  background-image: url(../img/icon-burger.svg);
+  background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: 162px 60px;
   width: 400px;
@@ -464,7 +464,7 @@ a.current:active {
 }
 
 .advice-three {
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: 169px 55px;
   width: 400px;
@@ -917,7 +917,7 @@ p.hotel-selection-number {
 .location {
   max-width: 1200px;
   height: 592px;
-  background-image: url(../img/map.png);
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -944,7 +944,7 @@ p.hotel-selection-number {
 /* //TODO: === Form Place of Residence in Sedona === */
 
 .place-residence-form {
-  background-image: url(../img/filter-hotels.jpg);
+  background-image: url("../img/filter-hotels.jpg");
   background-repeat:  no-repeat;
   background-color:  var(--color-welcome);
   display: -webkit-box;
@@ -1066,7 +1066,7 @@ input.house-type-input:checked+label::before {
   top: 0;
   width: 27px;
   height: 23px;
-  background-image: url(../img/icon-checkbox-on.svg);
+  background-image: url("../img/icon-checkbox-on.svg");
 }
 
 input.infrastructure-input:checked:disabled+label::before,
@@ -1077,7 +1077,7 @@ input.house-type-input:checked:disabled+label::before {
   top: 0;
   width: 27px;
   height: 23px;
-  background-image: url(../img/icon-checkbox-disabled.svg);
+  background-image: url("../img/icon-checkbox-disabled.svg");
 }
 
 input.house-type-input:checked+label::before,
