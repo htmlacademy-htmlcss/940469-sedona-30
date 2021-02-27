@@ -103,7 +103,10 @@ li {
   background-color: var(--color-background);
   -webkit-box-shadow: 0 5px 15px var(--color-for-shadow);
   box-shadow: 0 5px 15px var(--color-for-shadow);
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   position: relative;
   min-height: 100%;
@@ -236,7 +239,10 @@ a.current:active {
 .sedona-arizona-grid {
   max-width: 470px;
   min-height: 80px;
-  margin: 43px auto 16px;
+  margin-top: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
 }
 
 .welcom-sedona {
@@ -247,7 +253,10 @@ a.current:active {
   background-position: bottom, center top;
   background-size: auto, cover;
   width: 1200px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 0;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -551,7 +560,10 @@ a.current:active {
 /* //TODO: === Hotel Selection in Sedona === */
 
 .hotel-selection {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
   position: relative;
 }
@@ -560,11 +572,10 @@ a.current:active {
   margin-top: 0;
   margin-bottom: 0;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: -2px;
   width: 1200px;
   vertical-align: middle;
   text-align: center;
-  margin-left: -2px;
 }
 
 .hotel-interest {
@@ -1873,7 +1884,7 @@ footer {
 }
 
 .our-social-networks img[src*="twitter"] {
-  padding: 15px 15px;
+  padding: 15px;
   text-align: center;
   vertical-align: middle;
   width: 17px;
