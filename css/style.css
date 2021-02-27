@@ -1024,7 +1024,7 @@ input.infrastructure-input:not(:checked):disabled+label::before,
 input.house-type-input:not(:checked):disabled+label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -42px;
   top: 0;
   width: 19px;
   height: 19px;
@@ -1064,7 +1064,7 @@ input.house-type-input:checked+label::before {
   position: absolute;
   left: -40px;
   top: 0;
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url(../img/icon-checkbox-on.svg);
 }
@@ -1075,7 +1075,7 @@ input.house-type-input:checked:disabled+label::before {
   position: absolute;
   left: -42px;
   top: 0;
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url(../img/icon-checkbox-disabled.svg);
 }
