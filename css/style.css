@@ -1560,13 +1560,16 @@ a.residence-sorting-active:focus {
   border-top: 1px solid var(--color-borders-separators);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .choose-residence-li:last-child {
   border-bottom: 1px solid var(--color-borders-separators);
 }
 
-.choose-residence article {
+.choose-residence-li article {
   min-height: 150px;
   display: -ms-grid;
   display: grid;
@@ -1683,8 +1686,9 @@ a.residence-sorting-active:focus {
   background-color: var(--color-search-background);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin-top: 30px;
   margin-right: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .choose-residence-buttons {
@@ -1723,7 +1727,8 @@ a.residence-sorting-active:focus {
 }
 
 .choose-residence-rate p:first-child {
-  margin-bottom: 26px;
+  margin-top: 29px;
+  margin-bottom: 10px;
   margin-right: -2px;
 }
 
@@ -1734,22 +1739,18 @@ a.residence-sorting-active:focus {
   object-fit: cover;
 }
 
-.three-stars img {
+.three-stars img{
   width: 66px;
   height: 17px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.two-stars {
+.two-stars img{
   width: 42px;
   height: 17px;
   -o-object-fit: cover;
   object-fit: cover;
-}
-
-.choose-residence-rate p {
-  height: auto;
 }
 
 .choose-residence-spans {
