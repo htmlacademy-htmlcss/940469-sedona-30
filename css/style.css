@@ -633,6 +633,10 @@ a.current:active {
   outline: 2px solid var(--color-welcome);
 }
 
+.hotel-selection-modal:focus-within {
+  transform: scale(1.8);
+}
+
 .hotel-selection-modal {
   margin-right: auto;
   margin-left: auto;
