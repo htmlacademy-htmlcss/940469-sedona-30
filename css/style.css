@@ -499,13 +499,12 @@ a.current:active {
   line-height: 24px;
   text-align: center;
   margin-top: 58px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   max-width: 470px;
   box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
   padding-right: 3px;
-  padding-top: -3px;
 }
 
 .date-selection {
@@ -514,12 +513,14 @@ a.current:active {
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
+  line-height: 1.9;
   margin-bottom: 45px;
   padding-left: 3px;
 }
 
 .hotel-search {
   margin-left: 5px;
+  margin-top: -2px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -609,11 +610,8 @@ a.current:active {
   padding-bottom: 4px;
 }
 
-.hotel-modal-first label {
-  padding-top: -2px;
-}
-
 .hotel-modal-first input[type="text"] {
+  margin-top: 2px;
   margin-left: 24px;
   padding-left: 12px;
   text-align: left;
