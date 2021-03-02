@@ -552,7 +552,7 @@ a.current:active {
   opacity: 0.3;
 }
 
-.hotel-selection-modal p:focus-within {
+.hotel-selection-modal *:focus-within {
   outline: 2px solid var(--color-welcome);
 }
 
