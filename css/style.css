@@ -867,7 +867,7 @@ p.hotel-selection-number {
   margin-right: auto;
   justify-content: flex-start;
   background-size: cover;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 54px;
