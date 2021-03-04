@@ -500,15 +500,14 @@ a.current:active {
   text-align: center;
   margin-top: 58px;
   margin-bottom: 30px;
-  max-width: 470px;
-  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
+  max-width: 470px;
+  box-sizing: border-box;
   padding-right: 3px;
 }
 
 .date-selection {
-  line-height: 24px;
   text-align: center;
   max-width: 600px;
   margin-right: auto;
@@ -562,7 +561,7 @@ a.current:active {
   margin-left: auto;
   min-width: 568px;
   min-height: 395px;
-  box-shadow: 0px 7px 15px var(--color-shadow-modal);
+  box-shadow: 0 7px 15px var(--color-shadow-modal);
   display: grid;
   justify-content: center;
   padding-top: 40px;
@@ -592,7 +591,6 @@ a.current:active {
   color: var(--color-header-text);
   text-transform: uppercase;
   background-color: var(--color-search-background);
-  border: 0;
   width: 315px;
   height: 38px;
   box-sizing: border-box;
@@ -1050,7 +1048,7 @@ input.infrastructure-input:active + label::before {
 }
 
 .residence-form-one legend {
-  margin-left: 0px;
+  margin-left: 0;
   padding-left: 3px;
 }
 
@@ -1198,7 +1196,7 @@ input.infrastructure-input:active + label::before {
 .residence-show-button {
   text-align: center;
   padding-right: 10px;
-  padding-top: 0px;
+  padding-top: 0;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -1251,7 +1249,7 @@ input.infrastructure-input:active + label::before {
   width: 650px;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 0px;
+  padding-left: 0;
   margin-left: -6px;
   box-sizing: border-box;
 }
@@ -1278,7 +1276,6 @@ input.infrastructure-input:active + label::before {
 .residence-sorting a {
   font-size: 12px;
   line-height: 18px;
-  opacity: 0.3;
   color: var(--color-header-text);
   padding: 2px;
   border-bottom: var(--color-welcome) dashed 1px;
@@ -1787,8 +1784,8 @@ p.main-footer-academy {
 @-webkit-keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX();
-    transform: translateX();
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -1812,8 +1809,8 @@ p.main-footer-academy {
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX();
-    transform: translateX();
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -1836,8 +1833,8 @@ p.main-footer-academy {
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 
   70% {
@@ -1858,8 +1855,8 @@ p.main-footer-academy {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 
   70% {
