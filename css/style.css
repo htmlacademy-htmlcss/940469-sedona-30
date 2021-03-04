@@ -557,10 +557,6 @@ a.current:active {
   outline: 2px solid var(--color-welcome);
 }
 
-.hotel-selection-modal:focus-within {
-  transform: scale(1.6);
-}
-
 .hotel-selection-modal {
   margin-right: auto;
   margin-left: auto;
@@ -857,10 +853,6 @@ p.hotel-selection-number {
   outline: 1px dotted var(--color-welcome);
 }
 
-.logo:hover img {
-  transform: scale(1.1);
-}
-
 /* //TODO: === Form Place of Residence in Sedona === */
 
 .place-residence-form {
@@ -1015,7 +1007,7 @@ input.infrastructure-input:hover + label::before {
 input.house-type-input:active + label::before,
 input.infrastructure-input:active + label::before {
   cursor: pointer;
-  transform: scale(1.2);
+  opacity: 0.5;
 }
 
 .house-type {
