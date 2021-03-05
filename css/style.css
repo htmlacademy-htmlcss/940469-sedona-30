@@ -1,4 +1,4 @@
-/* // TODO: ====== Fonts ====== */
+/* ====== Fonts ====== */
 
 @font-face {
   font-family: "PT Sans";
@@ -16,7 +16,7 @@
   font-style: normal;
 }
 
-/* // TODO: ====== Variables ====== */
+/* ====== Variables ====== */
 
 :root {
 
@@ -55,7 +55,7 @@
 }
 
 
-/* // TODO: ====== Global ====== */
+/* ====== Global ====== */
 
 .main-main {
   min-height: calc(100vh - 120px);
@@ -126,7 +126,7 @@ button:hover {
   align-content: start;
 }
 
-/* // TODO: ====== Main Navigation ====== */
+/* ====== Main Navigation ====== */
 
 .main-navigation {
   display: grid;
@@ -217,7 +217,7 @@ a.current:active {
   opacity: 1;
 }
 
-/* // TODO: ====== Index ====== */
+/* ====== Index ====== */
 
 .welcom-image {
   width: 457px;
@@ -259,7 +259,7 @@ a.current:active {
   text-align: center;
 }
 
-/* //TODO: === 5 Reasons === */
+/* === 5 Reasons === */
 
 .reasons {
   line-height: 26px;
@@ -472,7 +472,7 @@ a.current:active {
   margin-top: 10px;
 }
 
-/* //TODO: === Hotel Selection in Sedona === */
+/* === Hotel Selection in Sedona === */
 
 .hotel-selection {
   margin-top: 0;
@@ -500,15 +500,14 @@ a.current:active {
   text-align: center;
   margin-top: 58px;
   margin-bottom: 30px;
-  max-width: 470px;
-  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
+  max-width: 470px;
+  box-sizing: border-box;
   padding-right: 3px;
 }
 
 .date-selection {
-  line-height: 24px;
   text-align: center;
   max-width: 600px;
   margin-right: auto;
@@ -557,16 +556,12 @@ a.current:active {
   outline: 2px solid var(--color-welcome);
 }
 
-.hotel-selection-modal:focus-within {
-  transform: scale(1.6);
-}
-
 .hotel-selection-modal {
   margin-right: auto;
   margin-left: auto;
   min-width: 568px;
   min-height: 395px;
-  box-shadow: 0px 7px 15px var(--color-shadow-modal);
+  box-shadow: 0 7px 15px var(--color-shadow-modal);
   display: grid;
   justify-content: center;
   padding-top: 40px;
@@ -596,7 +591,6 @@ a.current:active {
   color: var(--color-header-text);
   text-transform: uppercase;
   background-color: var(--color-search-background);
-  border: 0;
   width: 315px;
   height: 38px;
   box-sizing: border-box;
@@ -828,7 +822,7 @@ p.hotel-selection-number {
   margin-bottom: 5px;
 }
 
-/* //TODO: === Sedona Location === */
+/* === Sedona Location === */
 
 .location {
   max-width: 1200px;
@@ -850,18 +844,14 @@ p.hotel-selection-number {
   border: 0;
 }
 
-/* //TODO: ====== Catalog ====== */
+/* ====== Catalog ====== */
 
 .logo:focus img {
   cursor: pointer;
   outline: 1px dotted var(--color-welcome);
 }
 
-.logo:hover img {
-  transform: scale(1.1);
-}
-
-/* //TODO: === Form Place of Residence in Sedona === */
+/* === Form Place of Residence in Sedona === */
 
 .place-residence-form {
   background-image: url("../img/filter-hotels.jpg");
@@ -875,7 +865,7 @@ p.hotel-selection-number {
   margin-right: auto;
   justify-content: flex-start;
   background-size: cover;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 54px;
@@ -1015,7 +1005,7 @@ input.infrastructure-input:hover + label::before {
 input.house-type-input:active + label::before,
 input.infrastructure-input:active + label::before {
   cursor: pointer;
-  transform: scale(1.2);
+  opacity: 0.5;
 }
 
 .house-type {
@@ -1058,7 +1048,7 @@ input.infrastructure-input:active + label::before {
 }
 
 .residence-form-one legend {
-  margin-left: 0px;
+  margin-left: 0;
   padding-left: 3px;
 }
 
@@ -1206,7 +1196,7 @@ input.infrastructure-input:active + label::before {
 .residence-show-button {
   text-align: center;
   padding-right: 10px;
-  padding-top: 0px;
+  padding-top: 0;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
@@ -1217,7 +1207,7 @@ input.infrastructure-input:active + label::before {
   outline: 4px dotted var(--color-welcome);
 }
 
-/* //TODO: === Results of Form Place of Residence in Sedona === */
+/* === Results of Form Place of Residence in Sedona === */
 
 .residence-results {
   margin-bottom: 30px;
@@ -1259,7 +1249,7 @@ input.infrastructure-input:active + label::before {
   width: 650px;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 0px;
+  padding-left: 0;
   margin-left: -6px;
   box-sizing: border-box;
 }
@@ -1286,7 +1276,6 @@ input.infrastructure-input:active + label::before {
 .residence-sorting a {
   font-size: 12px;
   line-height: 18px;
-  opacity: 0.3;
   color: var(--color-header-text);
   padding: 2px;
   border-bottom: var(--color-welcome) dashed 1px;
@@ -1361,7 +1350,7 @@ a.residence-sorting-active:focus {
   fill: var(--color-welcome);
 }
 
-/* //TODO: === Choose your Residence in Sedona === */
+/* === Choose your Residence in Sedona === */
 
 .residence-choise {
   margin-top: 0;
@@ -1609,7 +1598,7 @@ a.residence-sorting-active:focus {
   width: 118px;
 }
 
-/* //TODO: ====== Main Footer ====== */
+/* ====== Main Footer ====== */
 
 footer {
   width: 1200px;
@@ -1776,7 +1765,7 @@ p.main-footer-academy {
 }
 
 
-/* //TODO: ===== Forms & JS ===== */
+/* ===== Forms & JS ===== */
 
 .hotel-form-show {
   display: none;
@@ -1795,8 +1784,8 @@ p.main-footer-academy {
 @-webkit-keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX();
-    transform: translateX();
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -1820,8 +1809,8 @@ p.main-footer-academy {
 @keyframes shake {
   0%,
   100% {
-    -webkit-transform: translateX();
-    transform: translateX();
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   10%,
@@ -1844,8 +1833,8 @@ p.main-footer-academy {
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 
   70% {
@@ -1866,8 +1855,8 @@ p.main-footer-academy {
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 
   70% {
