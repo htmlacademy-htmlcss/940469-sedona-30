@@ -518,6 +518,8 @@ a.current:active {
 }
 
 .hotel-search {
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 5px;
   margin-top: -2px;
   font-weight: bold;
@@ -531,7 +533,6 @@ a.current:active {
   padding-right: 139px;
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 0;
   max-width: 800px;
 }
 
